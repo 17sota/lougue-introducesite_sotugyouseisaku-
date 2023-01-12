@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+body {
+    background-color: #DFD1BF;
+
+}
+
+/*ヘッダーメニュー*/
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.header_inner {
+    position: relative;
+    padding: 15px;
+}
+
+/*スクロールボタン(予約用)*/
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*以下、div関係*/
+.reserve {
+    /*スクロールしても固定されてる状態のまま*/
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    background: #FFCD70;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+
+.workstyle {
+    background-color: ;
+}
+
+.stylist {
+    display: flex;
+    max-width: 100%;
+}
+
+/*若い子向けコンテンツ・様々な世代向けコンテンツ*/
+.yung {
+    background-color: #D9BAD4;
+}
+
+.biginner {
+    background-color: #DFDBB5;
+}
+
+.from_biginner {
+    background: #E8E7E2;
+}
+
+.service>dd {
+    font-size: 20px;
+    text-align: center;
+}
+
+.service>dt {
+    font-size: 14px;
+    text-align: center;
+}
+
+.service {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: #FFF;
+    width: 310px;
+    height: 120px;
+    border-radius: 30px;
+}
+
+.service>main {
+    font-weight: bold;
+}
+
+.customer_photo>img {
+    width: 120px;
+    height: 70px;
+}
+
+/*ボタン*/
+
+.btn {
+    display: inline-block;
+    border: 1px solid;
+}
+
+.enquete {
+    position: relative;
+    border: none;
+    appearance: none;
+    outline: 0;
+    border-radius: 8px;
+    background: #DEB887;
+    color: #000000;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    height: 64px;
+
+}
+
+img {
+    width: 100%;
+}
+
+
+/*テキスト関係*/
+@media (max-width: 1920px) {
+    p {
+        text-align: center;
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 124px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    dt {
+        font-size: 20px;
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    .right {
+        text-align: right;
+    }
+}
+
+@media (max-width: 390px) {
+    h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #keyvisual {
+        width: 100%;
+    }
+
+    .u-invisible-md-down {
+        position: absolute !important;
+        clip: rect(1px, 1px, 1px, 1px) !important;
+        visibility: hidden !important;
+    }
+
+    .enquete {
+        position: relative;
+        border: none;
+        appearance: none;
+        outline: 0;
+        border-radius: 8px;
+        background: #DEB887;
+        color: #000000;
+        font-weight: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        height: 64px;
+    }
+}
+
+.nav {
+    position: fixed;
+    right: -320px;
+    /* 右から出てくる */
+    top: 0;
+    width: 300px;
+    /* スマホに収まるサイズ */
+    height: 100vh;
+    padding-top: 60px;
+    background-color: #fff;
+    transition: all .6s;
+    z-index: 200;
+    overflow-y: auto;
+    /* メニューが多くなったらスクロールできるように */
+}
+
+.hamburger {
+    position: fixed;
+    width: 40px;
+    /* クリックしやすい幅 */
+    height: 40px;
+    /* クリックしやすい高さ */
+    cursor: pointer;
+    z-index: 300;
+    bottom: -719px;
+    background: #FFCD70;
+}
+
+.nav_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav_item {
+    text-align: center;
+    padding: 0 14px;
+}
+
+.nav_item a {
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav_item a:hover {
+    background-color: #eee;
+}
+
+.hamburger_border {
+    position: absolute;
+    left: 11px;
+    width: 18px;
+    height: 2px;
+    background-color: #333;
+    transition: all .6s;
+}
+
+.hamburger_border_top {
+    top: 14px;
+}
+
+.hamburger_border_center {
+    top: 20px;
+}
+
+.hamburger_border_bottom {
+    top: 26px;
+}
+
+.black_bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #333;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+}
+
+#catchcopy {
+    font-family: "Segoe Print";
+    font-size: 25px;
+    margin: 15px;
+}
+
+.bylougue {
+    padding: auto;
+    background: #DCC7AB;
+
+}
