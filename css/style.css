@@ -5,18 +5,15 @@ body {
 
 }
 
-/*ヘッダーメニュー*/
-.header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 60px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-.header_inner {
-    position: relative;
-    padding: 15px;
+li {
+    text-decoration: none
 }
 
 /*スクロールボタン(予約用)*/
@@ -57,25 +54,7 @@ a {
 
 .from_biginner {
     background: #E8E7E2;
-}
-
-.service>dd {
-    font-size: 20px;
-    text-align: center;
-}
-
-.service>dt {
-    font-size: 14px;
-    text-align: center;
-}
-
-.service {
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    background: #FFF;
-    width: 310px;
-    height: 120px;
-    border-radius: 30px;
+    padding: 40px;
 }
 
 .service>main {
@@ -118,8 +97,10 @@ img {
 }
 
 
+
+
 /*テキスト関係*/
-@media (max-width: 1920px) {
+@media (min-width: 950px) and (max-width: 1920px) {
     p {
         text-align: center;
     }
@@ -148,9 +129,22 @@ img {
     .right {
         text-align: right;
     }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        background-color: #DFD1BF;
+        list-style: none;
+        font-size: 35px;
+        text-decoration: none
+    }
 }
 
-@media (max-width: 390px) {
+
+
+@media (min-width: 320px) and (max-width: 500px) {
     h1 {
         font-size: 25px;
         text-align: center;
@@ -164,6 +158,41 @@ img {
         position: absolute !important;
         clip: rect(1px, 1px, 1px, 1px) !important;
         visibility: hidden !important;
+    }
+
+    .service {
+        padding: 23px;
+        margin: 23px;
+        background: #FFF;
+        width: 356px;
+        height: 162px;
+        border-radius: 30px;
+    }
+
+    .service>dd {
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 14px;
+    }
+
+    .service>dt {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #cheap_price {
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+
+    #relaxing_service {
+        font-size: 14px;
+    }
+
+    #menbers_card {
+        font-size: 1px;
+
     }
 
     .enquete {
@@ -183,6 +212,29 @@ img {
         box-sizing: border-box;
         height: 64px;
     }
+
+
+    .menu_List {
+        border-top: 5px solid #A56720;
+        border-bottom: 5px solid #A56720;
+
+    }
+
+    .nav_list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .consts-body {
+        position: relative;
+        background: #eee;
+        width: 400px;
+        height: 600px;
+        margin: 0 auto;
+    }
+
+    .hamburger {}
 }
 
 .nav {
@@ -213,11 +265,7 @@ img {
     background: #FFCD70;
 }
 
-.nav_list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+
 
 .nav_item {
     text-align: center;
