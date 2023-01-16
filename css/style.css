@@ -16,6 +16,7 @@ li {
     text-decoration: none
 }
 
+/*背景画像*/
 
 
 /*スクロールボタン(予約用)*/
@@ -47,7 +48,7 @@ a {
 /*若い子向けコンテンツ・様々な世代向けコンテンツ*/
 .yung {
     background-color: #D9BAD4;
-    padding: 14px;
+    width: 100%;
 }
 
 #from_yung {
@@ -55,7 +56,28 @@ a {
     margin-bottom: 15px;
 }
 
+/*ベスト3*/
+#best1 {
+    color: #B28169;
+    font-size: 13px;
+    font-family: "Sylfaen";
+    margin-top: -5px;
+}
 
+#best2 {
+    color: #82D0C8;
+    font-size: 13px;
+    font-family: "Sylfaen";
+    margin-top: 20px;
+}
+
+#best3 {
+    color: #DE74B7;
+    font-size: 13px;
+    font-family: "Sylfaen";
+    margin-top: 30px;
+
+}
 
 .biginner {
     background-color: #DFDBB5;
@@ -112,6 +134,19 @@ img {
     margin-bottom: 5px;
 }
 
+/*メニュー*/
+.menu {
+    width: 100%;
+}
+
+.menutittle {
+    border-top: 5px solid #A56720;
+    border-bottom: 5px solid #A56720;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 310px;
+}
 
 /*テキスト関係*/
 
@@ -156,6 +191,42 @@ img {
         font-size: 35px;
         text-decoration: none
     }
+
+    .nav_list li {
+        list-style: none;
+    }
+
+    .nav_item {
+        text-align: center;
+        padding: 0 14px;
+    }
+
+    .nav_item a {
+        display: block;
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .nav_item a:hover {
+        background-color: #eee;
+    }
+
+    /*素材コンテンツ > オススメ(PC用)*/
+
+    .recommendation {
+        display: flex;
+    }
+
+    .recommendation>dt {
+        display: flex;
+    }
+
+    .recommendation>dd {
+        display: flex;
+    }
+
 }
 
 #keyvisual {
@@ -164,7 +235,10 @@ img {
 
 
 
-@media (min-width: 320px) and (max-width: 500px) {
+@media (min-width: 200px) and (max-width: 500px) {
+
+
+
     h1 {
         font-size: 25px;
         text-align: center;
@@ -182,6 +256,11 @@ img {
     }
 
     /*髪型一覧*/
+
+    .stylecollection {
+        text-align: center;
+    }
+
     .best-three {
         width: 167px;
         height: 173px;
@@ -196,15 +275,23 @@ img {
         margin: auto;
         margin-top: -15px;
         margin-bottom: 15px;
+        text-align: center;
     }
 
-    #best1 {
-        color: #B28169;
+    .style_explanation>p {
+        font-size: 1px;
+        margin-bottom: 10px;
+    }
+
+    .Detailed {
         font-size: 13px;
-        font-family: "Sylfaen";
-        margin-top: 7px;
+        margin-bottom: 7px;
     }
 
+    .others {}
+
+
+    /*新規コンテンツ関連*/
     .service {
         padding: 23px;
         margin: auto;
@@ -241,6 +328,7 @@ img {
 
     }
 
+    /*お客様からの声*/
     .enquete {
         position: relative;
         border: none;
@@ -260,21 +348,16 @@ img {
         margin: auto;
     }
 
-
-    .menu {
-        border-top: 5px solid #A56720;
-        border-bottom: 5px solid #A56720;
-        margin-bottom: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 310px;
+    /*素材コンテンツ*/
+    .sozai {
+        width: 270px;
+        height: 270px;
+        margin: auto;
     }
 
-    .menu_List .nav_list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
+
+
+    /*メニュー関連*/
 
     .consts-body {
         position: relative;
@@ -283,6 +366,8 @@ img {
         height: 600px;
         margin: 0 auto;
     }
+
+
 
     /*ハンバーガーメニュー*/
 
@@ -311,36 +396,39 @@ img {
         border: none;
         bottom: 14px;
         left: 9px;
-        background: #FFCD70;
+
         z-index: 100;
     }
 
 
 
-    .nav_item {
-        text-align: center;
-        padding: 0 14px;
-    }
 
-    .nav_item a {
-        display: block;
-        padding: 8px 0;
-        border-bottom: 1px solid #eee;
-        text-decoration: none;
-        color: #333;
-    }
-
-    .nav_item a:hover {
-        background-color: #eee;
-    }
 
     /*メニュー線設定*/
+    .conts-body {
+        position: relative;
+        background: #eee;
+        width: 400px;
+        height: 600px;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        width: 40px;
+        height: 32px;
+        position: fixed;
+        bottom: 10px;
+        right: 16px;
+        background: #FFCD70;
+        z-index: 100;
+    }
+
     .hamburger_bar {
         display: block;
-        width: 37px;
+        width: 100%;
         height: 4px;
         position: absolute;
-        left: 5px;
+        left: 0;
         background: #000;
         transition: top 0.24s, transform 0.24s, opacity 0.24s;
     }
@@ -374,21 +462,135 @@ img {
         transform: translateY(-50%) rotate(-135deg);
     }
 
+    .nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 99;
+        background: #a0a0a0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.24s;
+        pointer-events: none;
+    }
+
     .nav.is_active {
         opacity: 1;
         pointer-events: auto;
     }
 
+    .nav_list {
+        position: absolute;
+        flex-direction: column;
+        gap: 32px;
+        background-color: ;
+    }
+
+    /* リセットCSS */
+    button {
+        border-color: transparent;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /*========= ナビゲーションのためのCSS ===============*/
+
+    #g-nav {
+        /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+        position: fixed;
+        z-index: -1;
+        opacity: 0;
+        /*はじめは透過0*/
+        /*ナビの位置と形状*/
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        /*ナビの高さ*/
+        background: #999;
+        /*動き*/
+        transition: all 0.3s;
+    }
+
+    /*アクティブクラスがついたら透過なしにして最前面へ*/
+    #g-nav.panelactive {
+        opacity: 1;
+        z-index: 999;
+    }
+
+    /*ナビゲーションの縦スクロール*/
+    #g-nav.panelactive #g-nav-list {
+        /*ナビの数が増えた場合縦スクロール*/
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: 100vh;
+        /*表示する高さ*/
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /*ナビゲーション*/
+    #g-nav ul {
+        display: none;
+        /*ナビゲーション天地中央揃え*/
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #g-nav.panelactive ul {
+        display: block;
+    }
+
+    /*リストのレイアウト設定*/
+
+    #g-nav li {
+        list-style: none;
+        text-align: center;
+    }
+
+    #g-nav li a {
+        color: #333;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+    }
+
+    .bylougue {
+        padding: auto;
+        background: #DCC7AB;
+        width: 400px;
+        height: 200px;
+
+    }
+
+    .bylougue>p {
+        font-size: 11px;
+    }
 }
 
 #catchcopy {
     font-family: "Segoe Print";
-    font-size: 25px;
+    font-size: 30px;
     margin: 15px;
-}
-
-.bylougue {
-    padding: auto;
-    background: #DCC7AB;
-
 }
