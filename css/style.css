@@ -210,10 +210,31 @@ img {
     text-align: center;
 }
 
+/*メニュー関連*/
+
+.menu_List dt {
+    width: calc();
+    text-align: left;
+    margin-left: 40px;
+}
+
+.menu_List dd {
+    text-align: right;
+    margin-right: 45px;
+}
+
 /*アクセス関連*/
 
 address {
     text-align: center;
+}
+
+.timeandday>dt {
+    text-align: left;
+}
+
+.timeandday>dd {
+    text-align: right;
 }
 
 /*テキスト関係*/
@@ -463,7 +484,7 @@ address {
 
     .service>dd {
         font-family: 'BIZ UDPゴシック';
-        font-size: 24px;
+        font-size: 20px;
         text-align: center;
         font-weight: bold;
         margin-bottom: 14px;
@@ -533,34 +554,33 @@ address {
 
     /*メニュー関連*/
 
+    .menu_List {
+        margin-bottom: 15px;
+    }
+
+    .menu_List dt {
+        width: calc();
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .menu_List dd {
+        text-align: right;
+        margin-right: 45px;
+    }
+
+
+
+
+
+    /*ハンバーガーメニュー*/
+
     .consts-body {
         position: relative;
         background: #eee;
         width: 400px;
         height: 600px;
         margin: 0 auto;
-    }
-
-
-
-    /*ハンバーガーメニュー*/
-
-
-
-    .nav {
-        position: fixed;
-        right: -320px;
-        /* 右から出てくる */
-        top: 0;
-        width: 300px;
-        /* スマホに収まるサイズ */
-        height: 100vh;
-        padding-top: 60px;
-        background-color: #fff;
-        transition: all .6s;
-        z-index: 200;
-        overflow-y: auto;
-        /* メニューが多くなったらスクロールできるように */
     }
 
     .hamburger {
@@ -660,7 +680,7 @@ address {
         position: absolute;
         flex-direction: column;
         gap: 32px;
-        background-color: ;
+        background-color: #DEB887;
     }
 
     /* リセットCSS */
