@@ -11,21 +11,23 @@
 </head>
 
 <body>
-    <nav id="g-nav">
-        <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
-            <!-- ナビメニュー欄 -->
-            <ul class="nav_list">
-                <li class="nav_item"><a href="#">Lougueとは</a></li>
-                <li class="nav_item"><a href="#">インテリア</a></li>
-                <li class="nav_item"><a href="#">スタイル</a></li>
-                <li class="nav_item"><a href="#">初めてご利用の方に</a></li>
-                <li class="nav_item"><a href="#">お客様からの声</a></li>
-                <li class="nav_item"><a href="#">素材</a></li>
-                <li class="nav_item"><a href="#">メニュー</a></li>
-                <li class="nav_item"><a href="#">アクセス</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav id="g-nav" class="nav">
+            <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                <!-- ナビメニュー欄 -->
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#">Lougueとは</a></li>
+                    <li class="nav_item"><a href="#">インテリア</a></li>
+                    <li class="nav_item"><a href="#">スタイル</a></li>
+                    <li class="nav_item"><a href="#">初めてご利用の方に</a></li>
+                    <li class="nav_item"><a href="#">お客様からの声</a></li>
+                    <li class="nav_item"><a href="#">素材</a></li>
+                    <li class="nav_item"><a href="#">メニュー</a></li>
+                    <li class="nav_item"><a href="#">アクセス</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <!-- ハンバーガーメニュー以下(29行目から45行目)-->
     <div class="conts-body">
         <button class="hamburger">
@@ -35,18 +37,22 @@
         </button>
 
     </div>
-    <img id="keyvisual" src="img/keyvisual.png" alt="Lougeのキービジュアル">
+    <div class="keyvisual">
+        <div class="logo">
+            <img src="img/logomark.png" alt="Lougeのキービジュアル">
+        </div>
+    </div>
     <a href="https://beauty.hotpepper.jp/CSP/bt/reserve/?storeId=H000041494" class="reserve">予約へ </a>
     <h1>Logueとは</h1>
 
     <div class="workstyle">
         <div class="stylist">
-            <img src="img/washing hair.png">
-            <img src="img/dryer.png">
+            <img src="img/washing hair.png" alt="洗髪の様子">
+            <img src="img/dryer.png" alt="ドライヤーをしている様子">
         </div>
         <div class="stylist">
-            <img src="img/hirono(cut1).png">
-            <img src="img/womanstylist.png">
+            <img src="img/hirono(cut1).png" alt="店長がカットしている様子">
+            <img src="img/womanstylist.png" alt="女性のスタイリスさんがカットしている様子">
         </div>
     </div>
     <div class="bylougue">
@@ -65,72 +71,175 @@
             <div class="left">
                 <img src="img/interior_3.jpg">
             </div>
-            　　　<figcaption>自然光差しこむ空間で<br>お客さまにくつろいでもらうために<br>木材の色を使用しています。</figcaption>
+            　　　<figcaption id="interior_mean">自然光差しこむ空間で<br>お客さまにくつろいでもらうことができます。</figcaption>
         </figure>
     </div>
-    <div class="yung">
+    <div class="yung"><!-- スタイル -->
         <h1>スタイル</h1>
         <p id="from_yung">当店では流行中の髪型、定番のスタイルに加え<br>お客様のご希望に応え様々なスタイルを作り上げます。<br>施術を始める前に気軽にご相談ください。</p>
 
         <h2>当店で人気のスタイル<br>3選</h2>
+        　　　　<div class="styleresponsiv"><!-- PC版用設定(スタイル) -->
+            <div class="best-three">
+                <img src="img/innnercolor_mintgreeen.png">
+            </div>
+            　<div class="style_explanation">
+                <p id="best1">インナーカラーXミントグリーン</p><!-- スタイル名 -->
+                <p>ナチュラルなイメージをベースに<br>ブラウンに緑のメッシュを入れた<br>スタイルです。</p>
+                <p class="combination">カット、カラー、トリートメント</p>
+                <div class="Detailed"><!-- スタイル説明 -->
+                    <p>長さ　ロング</p>
+                </div>
+                <div class="Detailed"><!-- スタイル説明 -->
+                    <p>カラー　ブラウン</p>
+                </div>
+                <div class="Detailed"><!-- スタイル説明 -->
+                    <p>イメージ　ナチュラル</p>
+                </div>
+            </div>
+            <div class="best-three">
+                <img src="img/wcolor_x_green.png">
+            </div>
+            <div class="style_explanation">
+                <p id="best2">Wカラーxグリーン</p><!-- スタイル名 -->
+                <p>自然の緑をベースに<br>グラデーションしたスタイルです。</p>
+                <p class="combination">カットxブリーチxカラーxトリートメント</p>
+                <div class="Detailed"><!-- スタイル説明 -->
+                    <p>長さ　ショート</p>
+                </div>
+                <div class="Detailed"><!-- スタイル説明 -->
+                    <p>カラー　その他カラー</p>
+                </div>
+                <div class="Detailed"><!-- スタイル説明 -->
+                    <p>イメージ　カジュアルストリート</p>
+                </div>
+            </div>
+            <div class="best-three">
+                <img src="img/Balayagepink.png">
+            </div>
+            <div class="style_explanation">
+                <p id="best3">バイヤージュxピンクベージュ</p><!-- スタイル名 -->
+                <p>定番のバイヤージュに<br>ピンクベージュ系のカラーをした<br>スタイルです。</p>
+                <p class="combination">ブリーチ+オンカラー</p>
+                <div class="Detailed"><!-- スタイル説明 -->
+                    <p>長さ　ロング</p>
+                </div>
+                <div class="Detailed"><!-- スタイル説明 -->
+                    <p>カラー　その他カラー</p>
+                </div>
+                <div class="Detailed"><!-- スタイル説明 -->
+                    <p>イメージ　カジュアルストリート</p>
+                </div>
+            </div>
+        </div><!-- PC版用設定(スタイル) -->
 
-        <div class="best-three">
-            <img src="img/innnercolor_mintgreeen.png">
+        <h2>その他のスタイル</h2>
+        <div class="others">
+            <img src="img/men'smashxpama.png">
         </div>
-        　<div class="style_explanation">
-            <p id="best1">インナーカラーXミントグリーン</p><!-- スタイル名 -->
-            <p>ナチュラルなイメージをベースに<br>ブラウンに緑のメッシュを入れた<br>スタイルです。</p>
-            <p class="combination">カット、カラー、トリートメント</p>
+        <div class="style_explanation">
+            <p id="other1">men'sマッシュxパーマ</p><!-- スタイル名 -->
+            <p>男性のお客様に<br>人気のスタイルです。</p>
+            <p class="combination">カットxパーマ</p>
             <div class="Detailed"><!-- スタイル説明 -->
-                <p>長さ　ロング</p>
+                <p>長さ　ベリーショート</p>
             </div>
             <div class="Detailed"><!-- スタイル説明 -->
-                <p>カラー　ブラウン</p>
+                <p>カラー　アッシュ・ブラック</p>
             </div>
             <div class="Detailed"><!-- スタイル説明 -->
                 <p>イメージ　ナチュラル</p>
             </div>
         </div>
-        <div class="best-three">
-            <img src="img/wcolor_x_green.png">
+        <div class="others">
+            <img src="img/baiyaju+pinkgreyju.png">
         </div>
         <div class="style_explanation">
-            <p id="best2">Wカラーxグリーン</p><!-- スタイル名 -->
-            <p>自然の緑をベースに<br>グラデーションしたスタイルです。</p>
-            <p class="combination">カットxブリーチxカラーxトリートメント</p>
+            <p id="other2">バイレヤージュ+ピンクグレージュ</p><!-- スタイル名 -->
+            <p>バイレヤージュが髪に動きを与えます</p>
+            <p class="combination">カット、カラー、トリートメント</p>
+            <div class="Detailed"><!-- スタイル説明 -->
+                <p>長さ　ミディアム</p>
+            </div>
+            <div class="Detailed"><!-- スタイル説明 -->
+                <p>カラー　レッドピンク</p>
+            </div>
+            <div class="Detailed"><!-- スタイル説明 -->
+                <p>イメージ　ナチュラル</p>
+            </div>
+        </div>
+        <div class="others">
+            <img src="img/bi-silett-medium.png">
+        </div>
+
+        <div class="style_explanation">
+            <p id="other3">美シルエットミディアム</p><!-- スタイル名 -->
+            <p>くびれ感ある綺麗な<br>ミディアムヘアです</p>
+            <p class="combination">カット+カラー</p>
+            <div class="Detailed"><!-- スタイル説明 -->
+                <p>長さ　ミディアム</p>
+            </div>
+            <div class="Detailed"><!-- スタイル説明 -->
+                <p>カラー　ブラウンベージュ</p>
+            </div>
+            <div class="Detailed"><!-- スタイル説明 -->
+                <p>イメージ　ナチュラル</p>
+            </div>
+        </div>
+        <div class="others">
+            <img src="img/nopin-hairset.png">
+        </div>
+        <div class="style_explanation">
+            <p id="other4">ピンなしヘアセット☆</p><!-- スタイル名 -->
+            <p>余興のためピンを使わないアップ<br>ピンが苦手な方にもオススメです</p>
+            <p class="combination">アップ</p>
+            <div class="Detailed"><!-- スタイル説明 -->
+                <p>長さ　セミロング</p>
+            </div>
+            <div class="Detailed"><!-- スタイル説明 -->
+                <p>カラー　アッシュブラック</p>
+            </div>
+            <div class="Detailed"><!-- スタイル説明 -->
+                <p>イメージ　ナチュラル</p>
+            </div>
+        </div>
+        <div class="others">
+            <img src="img/natural-bob.png">
+        </div>
+
+        <div class="style_explanation">
+            <p id="other5">ナチュラルボブ</p><!-- スタイル名 -->
+            <p>程よい外ハネと<br>ナチュラルなインナーカラー</p>
+            <p class="combination">カット、インナーカラー、トリートメント</p>
+            <div class="Detailed"><!-- スタイル説明 -->
+                <p>長さ　ミディアム</p>
+            </div>
+            <div class="Detailed"><!-- スタイル説明 -->
+                <p>カラー　ブラウンベージュ</p>
+            </div>
+            <div class="Detailed"><!-- スタイル説明 -->
+                <p>イメージ　ナチュラル</p>
+            </div>
+        </div>
+        <div class="others">
+            <img src="img/innerparpull+grayju.png">
+        </div>
+
+        <div id="laststyle" class="style_explanation">
+            <p id="other1">インナーパープル+グレージュ</p><!-- スタイル名 -->
+            <p>ウェット感のあるスタイリング剤で<br>簡単セット</p>
+            <p class="combination">カット、カラー、インナーカラー</p>
             <div class="Detailed"><!-- スタイル説明 -->
                 <p>長さ　ショート</p>
             </div>
             <div class="Detailed"><!-- スタイル説明 -->
-                <p>カラー　その他カラー</p>
+                <p>カラー　アッシュブラック</p>
             </div>
             <div class="Detailed"><!-- スタイル説明 -->
-                <p>イメージ　カジュアルストリート</p>
+                <p>イメージ　ナチュラル</p>
             </div>
         </div>
-        <div class="best-three">
-            <img src="img/Balayagepink.png">
-        </div>
-        <div class="style_explanation">
-            <p id="best3">バイヤージュxピンクベージュ</p><!-- スタイル名 -->
-            <p>定番のバイヤージュに<br>ピンクベージュ系のカラーをした<br>スタイルです。</p>
-            <p class="combination">ブリーチ+オンカラー</p>
-            <div class="Detailed"><!-- スタイル説明 -->
-                <p>長さ　ロング</p>
-            </div>
-            <div class="Detailed"><!-- スタイル説明 -->
-                <p>カラー　その他カラー</p>
-            </div>
-            <div class="Detailed"><!-- スタイル説明 -->
-                <p>イメージ　カジュアルストリート</p>
-            </div>
-
-            <h2>その他のスタイル</h2>
-            <div class="others">
-                <img src="">
-            </div>
-            <p></p>
-        </div>
+    </div><!-- スタイル -->
     </div>
     <div class="biginner"><!-- 初めてのご利用のお客様の編集 -->
         <h1>初めてご利用の方に</h1>
@@ -151,17 +260,16 @@
         <dl>
             <div class="service">
                 <dd>安心学生料金!!</dd>
-                <dt id="cheap_price">小学生から高校生までのお客様はカットが<br>通常より格安で提供しています</dt>
+                <dt>小学生から高校生までのお客様はカットが<br>通常より格安で提供しています</dt>
                 <dt>詳しくはメニューへ</dt>
             </div>
             <div class="service">
                 <dd>くつろげるサービスを提供</dd>
-                <dt id="relaxing_service">放置中や施術中などタブレットや雑誌をご用意しております。<br>またドリンクのサービスもしております</dt>
+                <dt>施術中などにタブレットや雑誌をご用意しております。<br>またドリンクのサービスもしております。</dt>
             </div>
             <div class="service">
                 <dd>メンバーズカードをお作りします</dd>
-                <dt id="menbers_card">
-                    一回行くことにポイントがたまるカードを配布してます。<br>お会計時にカードを掲示していただければ、一回につき<br>ポイントが付きます。<br>利用するほどいいことがあります。</dt>
+                <dt>一回行くことにポイントがたまるカードを配布してます。<br>前回の来店日や施術内容を確認できます。</dt>
             </div>
         </dl>
     </div>
@@ -169,21 +277,26 @@
     <a class="enquete"
         href="https://docs.google.com/forms/d/e/1FAIpQLSdiQe5AxQUGLfRTnbLWn78vZqqOjPCPjQo-g210NnmcSqWzuQ/viewform?usp=sf_link">あなたの声を聞かせてください</a>
 
+    <div class="sozai"><!-- 素材コンテンツ編集 -->
+        <h1>素材</h1>
+        <img src="img/NAPLA.png">
+        <p>お客様の生活に寄り添ったナチュラルな髪型に仕上げたいということで<br>ナチュラルさをプラスするNAPLAを使用しております。</p>
+        　　
+        <h2>オススメ一覧</h2>
+        　　　<div class="recommendation"><!-- PC用レスポンシブ -->
+            <img src="img/relavel shanpoo.png">
+            <dl>
+                <dt>RELAVEL CMC SHAMPOO & HAIR MASK</dt>
+                <dd>植物由来の保温成分を配合し、<br>髪をしっとりとした質感に仕上げます</dd>
+            </dl>
+            <img src="img/n.base spray.png">
+            <dl>
+                <dt>N.BASE.SPLAY</dt>
+                <dd>柔らかく湯溜め久毛先のために<br>スタイリング前に全体に吹きつけて、熱から髪を守ります。</dd>
+            </dl>
+        </div>
+    </div><!-- 素材コンテンツ編集 -->
 
-    <h1>素材</h1>
-    <img src="img/NAPLA.png">
-    <p>お客様の生活に寄り添ったナチュラルな髪型に仕上げたいということで<br>ナチュラルさをプラスするNAPLAを使用しております。</p>
-    　　
-    <h2>オススメ一覧</h2>
-    　　　<div class="recommendation"><!-- PC用レスポンシブ -->
-        <img src="img/relavel shanpoo.png">
-        <dt>RELAVEL CMC SHAMPOO & HAIR MASK</dt>
-        <dd>植物由来の保温成分を配合し、<br>髪をしっとりとした質感に仕上げます</dd>
-        <img src="img/n.base spray.png">
-        <dt>N.BASE.SPLAY</dt>
-        <dd>柔らかく湯溜め久毛先のために<br>スタイリング前に全体に吹きつけて、熱から髪を守ります。</dd>
-        　　　　　　　　　
-    </div>
     <div class="menu"><!-- メニューコンテンツの編集 -->
         <h1>メニュー</h1>
         　　<div class="menutittle">
@@ -201,7 +314,35 @@
         </div>
     </div><!-- メニューコンテンツの編集 -->
     <h1>アクセス</h1>
+
+    <div class="lougue_place">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12968.758928277806!2d140.048279!3d35.6476968!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x15a115a90850104e!2z44Ot44O844Kw77yISGFpbWFrZSBMb2d1Ze-8iQ!5e0!3m2!1sja!2sjp!4v1673875379844!5m2!1sja!2sjp"
+            width="314" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <img id="Lougue_billding" src="img/building.jpg" alt="美容院のある建物">
+    </div>
+
+    <address>
+        千葉県千葉市美浜区若葉３ー２ー１６<br>イオンスタイル幕張ベイパークVillage３
+    </address>
+    <address>
+        JR京葉線　海浜幕張駅北口から徒歩１０分
+    </address>
+    <div class="timeandday">
+        <p>営業時間 10:00~20:00 （カット最終受付19:00</p>
+        <p>定休日　　年中無休</p>
+    </div>
+    <address>
+        電話番号 043-307-7973
+    </address>
     <footer>
+        <div class="SNS">
+            <h2>SNS</h2>
+            <p>Lougueのスタイリストさんの様子が満載</p>
+            <p>instagrum</main>
+                <a href="https://www.instagram.com/logue.kaihinmakuhari/" img src="img/instagramロゴ.png">
+        </div>
         <img src="img/return_top.png" alt="一番上に戻るボタン" style="width: 120px; height: 70px;">
     </footer>
 </body>
