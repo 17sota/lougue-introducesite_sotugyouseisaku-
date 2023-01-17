@@ -6,10 +6,10 @@ $(function () {
 
     hamburger.click(function () {
         $(this).find(".hamburger_bar").toggleClass("is_active");
-        nav.toggleClass("is_active");
+        $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
     });
 
-    $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+
 });
 
 $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
