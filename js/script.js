@@ -16,3 +16,11 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
     $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
+
+// グローバルナビメニューのリンクをクリックしたらページを閉じる
+$(function () {
+    $("#g-nav ul li a").on("click", function () {
+        $("#g-nav ul").toggleClass();
+        $("body").removeClass("open");
+    });
+});

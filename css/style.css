@@ -62,22 +62,27 @@ a {
     color: #B28169;
     font-size: 13px;
     font-family: "Sylfaen";
-    margin-top: -5px;
+    padding: 4px;
+    margin-bottom: 5px;
 }
 
 #best2 {
     color: #82D0C8;
     font-size: 13px;
     font-family: "Sylfaen";
-    margin-top: 20px;
+    padding: 4px;
 }
 
 #best3 {
     color: #DE74B7;
     font-size: 13px;
     font-family: "Sylfaen";
-    margin-top: 30px;
+    padding: 5px;
+}
 
+.combination {
+    font-size: 10px;
+    margin-bottom: 5px;
 }
 
 /*その他のスタイル*/
@@ -85,6 +90,28 @@ a {
     color: #000000;
     font-family: 'Sylfaen';
 }
+
+#other2 {
+    color: #F16682;
+}
+
+#other3 {
+    color: #937B69;
+}
+
+#other4 {
+    color: #201D1D;
+}
+
+#other5 {
+    color: #937B69;
+}
+
+#other6 {
+    color: #201D1D;
+}
+
+/*新規様向けへ*/
 
 .biginner {
     background-color: #DFDBB5;
@@ -189,7 +216,11 @@ img {
 
 /*髪型説明*/
 
-.style_explanation>p {
+.other {
+    padding: 10px;
+}
+
+.style_explanation>dd {
     font-size: 1px;
     margin-bottom: 10px;
 }
@@ -199,14 +230,24 @@ img {
     margin-bottom: 7px;
 }
 
+.Detailed>dt {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: -17px;
+    margin-left: -87px;
+}
+
+.Detailed>dd {
+    font-size: 10px;
+    margin-left: 77px;
+}
+
 .style_explanation {
     border: none;
     background-color: #FFFFFF;
     width: 200px;
     height: 180px;
     margin: auto;
-    margin-top: -15px;
-    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -241,6 +282,24 @@ address {
 
 /*PC版↓*/
 @media (min-width: 950px) and (max-width: 1920px) {
+
+    /*ファーストビュー*/
+    .logo {
+        width: 660px;
+        height: 500px;
+    }
+
+    .keyvisual {
+        width: 100%;
+        background-image: url(../img/keyvisual_pc.jpg);
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
     p {
         text-align: center;
     }
@@ -407,21 +466,30 @@ address {
 
 /*キービジュアル関連*/
 
-.logo {
-    width: 100%;
-}
 
-.keyvisual {
-    width: 100%;
-    background-image: url(keyvisual_interior.jpg);
-    background-size: cover;
-}
+
+
 
 
 
 @media (min-width: 200px) and (max-width: 500px) {
 
+    /*ファーストビュー*/
 
+    .logo {
+        width: 148px;
+        height: 111px;
+    }
+
+    .keyvisual {
+        width: 100%;
+        background-image: url(../img/keyvisual1.jpg);
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     h1 {
         font-size: 25px;
@@ -444,25 +512,24 @@ address {
         width: 167px;
         height: 173px;
         margin: auto;
+        padding: 5px;
     }
 
     .others {
         width: 167px;
         height: 173px;
         margin: auto;
-        margin-bottom: 35px;
+        padding: 5px;
 
     }
 
-    .style_explanation>p {
+    .style_explanation>dd {
         font-size: 1px;
         margin-bottom: 10px;
     }
 
-    .Detailed {
-        font-size: 13px;
-        margin-bottom: 7px;
-    }
+
+
 
 
     /*インテリア関連*/
@@ -602,7 +669,6 @@ address {
     .conts-body {
         position: relative;
         background: #eee;
-        height: 600px;
         margin: 0 auto;
     }
 
@@ -613,7 +679,7 @@ address {
         bottom: 10px;
         right: 16px;
         background: #FFCD70;
-        z-index: 100;
+        z-index: 1000;
     }
 
     .hamburger_bar {
@@ -680,7 +746,7 @@ address {
         position: absolute;
         flex-direction: column;
         gap: 32px;
-        background-color: #DEB887;
+        background-color: #DCD0B9;
     }
 
     /* リセットCSS */
@@ -714,7 +780,7 @@ address {
         width: 100%;
         height: 100vh;
         /*ナビの高さ*/
-        background: #999;
+        background: #DCD0B9;
         /*動き*/
         transition: all 0.3s;
     }
