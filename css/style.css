@@ -210,7 +210,11 @@ img {
     font-size: 30px;
 }
 
+/*素材*/
 
+.sozai figcaption {
+    font-weight: bold;
+}
 
 /*サービス一覧*/
 
@@ -287,7 +291,7 @@ address {
 }
 
 .timeandday {
-    margin: 1px;
+    margin: 38px;
 }
 
 .timeandday>dt {
@@ -298,7 +302,8 @@ address {
 
 .timeandday>dd {
     text-align: right;
-    margin-right: 40px;
+    margin-right: -15px;
+    margin-top: -24px;
 }
 
 .SNS img {
@@ -309,7 +314,7 @@ address {
 /*テキスト関係*/
 
 /*PC版↓*/
-@media (min-width: 950px) and (max-width: 1920px) {
+@media (min-width: 950px) and (max-width: 2000px) {
 
 
     .reserve {
@@ -457,14 +462,14 @@ address {
     .Detailed>dt {
         font-size: 30px;
         text-align: center;
-        margin-right: 102px;
-        margin-top: 9px;
-        margin-bottom: -42px;
+        margin-right: 141px;
+        margin-top: 20px;
+        margin-bottom: -44px;
     }
 
     .Detailed>dd {
         font-size: 27px;
-        margin-left: 168px;
+        margin-left: 165px;
     }
 
     #Wcolorgreen {
@@ -493,7 +498,7 @@ address {
         color: #82D0C8;
         font-size: 30px;
         font-family: "Sylfaen";
-        padding: 4px;
+        padding: 5px;
     }
 
     #best3 {
@@ -518,16 +523,16 @@ address {
 
     #other2 {
         color: #F16682;
-        font-size: 30px;
+        font-size: 27px;
         padding: 10px;
-        margin-bottom: 18px;
+        margin-bottom: 30px;
     }
 
     #other3 {
         color: #937B69;
         font-size: 30px;
         padding: 10px;
-        margin-bottom: 16px
+        margin-bottom: 22px
     }
 
     #other4 {
@@ -601,8 +606,6 @@ address {
         font-size: 100px;
     }
 
-    ;
-
     .sozai img {
         width: 1270px;
         height: 1270px;
@@ -615,8 +618,14 @@ address {
         font-size: 40px;
     }
 
+    .sozai dd {
+        margin: auto;
+        font-size: 30px;
+    }
+
     .recommendation {
         margin: auto;
+        padding: 25px;
     }
 
     .recommendation img {
@@ -672,35 +681,105 @@ address {
     }
 
     /*お客様からの声*/
+    .customer_voice_woman {
+        border: 5px solid #FFCAEB;
+        background: #FFF;
+        width: 1280px;
+        height: 650px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .customer_voice_man {
+        border: 5px solid #818FBD;
+        background: #FFF;
+        width: 1280px;
+        height: 650px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .customer_voice_woman p {
+
+        font-size: 30px;
+        margin-right: 360px;
+        padding: 8px;
+        margin-top: -60px;
+    }
+
+    .customer_voice_woman img {
+        margin-left: 800px;
+        margin-bottom: -109px;
+        margin-top: 40px;
+        width: 330px;
+        height: 330px;
+    }
+
+    .customer_voice_woman dl {
+        display: flex;
+        margin: 80px;
+        margin-left: 945px;
+    }
+
+    .customer_voice_woman dt {
+        font-size: 27px;
+    }
+
+    .customer_voice_woman dd {
+        font-size: 27px;
+        margin-left: 19px;
+    }
+
+    .customer_voice_man p {
+        font-size: 30px;
+        margin-right: 360px;
+        padding: 8px;
+        margin-top: -60px;
+    }
+
+    .customer_voice_man img {
+        margin-left: 800px;
+        margin-bottom: -109px;
+        margin-top: 40px;
+        width: 330px;
+        height: 330px;
+    }
+
+
+    .customer_voice_man dl {
+        display: flex;
+        margin: 80px;
+        margin-left: 945px;
+        margin-top: 165px;
+    }
+
+    .customer_voice_man dt {
+        font-size: 27px;
+    }
+
+    .customer_voice_man dd {
+        font-size: 27px;
+        margin-left: 19px;
+    }
+
     .enquete {
         position: relative;
         border: none;
         appearance: none;
         outline: 0;
-        border-radius: 8px;
+        border-radius: 45px;
         background: #DEB887;
         color: #000000;
-        font-size: 50px;
         font-weight: 100;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 780px;
+        width: 790px;
         margin-bottom: 20px;
         box-sizing: border-box;
-        height: 210px;
+        height: 220px;
         margin: auto;
-    }
-
-    iframe {
-        width: 850px;
-        height: 850px;
-        border: 0
-    }
-
-    #Lougue_billding {
-        width: 850px;
-        height: 850px;
+        font-size: 50px;
     }
 
     /*メニュー関連*/
@@ -756,6 +835,18 @@ address {
 
     /*アクセス関連*/
 
+
+    iframe {
+        width: 850px;
+        height: 850px;
+        border: 0
+    }
+
+    #Lougue_billding {
+        width: 850px;
+        height: 850px;
+    }
+
     address {
         font-size: 40px;
         text-align: center;
@@ -769,6 +860,7 @@ address {
         text-align: center;
         margin: 10px;
         font-size: 40px;
+        font-weight: bold;
     }
 
     .timeandday>dd {
@@ -805,6 +897,7 @@ address {
     h1 {
         font-size: 25px;
         text-align: center;
+        padding: 10px;
     }
 
     .u-invisible-md-down {
@@ -825,6 +918,8 @@ address {
         margin: auto;
         padding: 5px;
     }
+
+
 
     .others {
         width: 167px;
@@ -893,12 +988,59 @@ address {
     /*お客様からの声*/
 
     /*お客様の声*/
-    .custmer_voice {
-        width: 370px;
-        height: 180px;
-        margin: auto;
-        margin-bottom: 50px;
 
+    .customer_voice_woman {
+        border: 5px solid #FFCAEB;
+        background: #FFF;
+        width: 350px;
+        height: 200px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .customer_voice_man {
+        border: 5px solid #818FBD;
+        background: #FFF;
+        width: 350px;
+        height: 200px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .customer_voice_woman p {
+        margin: 14px;
+        font-size: 5px;
+        margin-right: 113px;
+    }
+
+    .customer_voice_woman img {
+        margin-left: 222px;
+        margin-bottom: -109px;
+        width: 94px;
+        height: 94px;
+    }
+
+    .customer_voice_woman dl {
+        display: flex;
+        margin-left: 225px;
+    }
+
+    .customer_voice_man p {
+        margin: 35px;
+        font-size: 5px;
+        margin-right: 135px;
+    }
+
+    .customer_voice_man img {
+        margin-left: 222px;
+        margin-bottom: -109px;
+        width: 94px;
+        height: 94px;
+    }
+
+    .customer_voice_man dl {
+        display: flex;
+        margin-left: 225px;
     }
 
     .enquete {
@@ -1174,17 +1316,23 @@ address {
     }
 
     #train {
-        margin-bottom: 15px;
+        margin-bottom: -34px;
+    }
+
+    .timeandday>dt {
+        text-align: left;
+        margin-left: 21px;
+        font-weight: bold;
     }
 
     #unpaid {
-        margin-right: 221px;
-        margin-top: -24px;
+        margin-right: 160px;
+        margin-top: -23px;
     }
 
     #phone {
-        margin-top: -25px;
-        margin-right: 171px;
+        margin-top: -24px;
+        margin-right: 109px;
     }
 
     #hotpepperbeauty {
