@@ -10,6 +10,7 @@
     <script src="js/script.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"
         integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -32,11 +33,13 @@
     </header>
     <!-- ハンバーガーメニュー以下(29行目から45行目)-->
     <div class="conts-body">
-        <button class="hamburger">
-            <span class="hamburger_bar"></span>
-            <span class="hamburger_bar"></span>
-            <span class="hamburger_bar"></span>
-        </button>
+        <div class="hamburgermenu_icon">
+            <button class="hamburger">
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+            </button>
+        </div>
 
     </div>
     <div class="keyvisual">
@@ -84,146 +87,182 @@
             <h1>スタイル</h1>
             <p id="from_yung">当店では流行中の髪型、定番のスタイルに加え<br>お客様のご希望に応え様々なスタイルを作り上げます。<br>施術を始める前に気軽にご相談ください。</p>
 
-            <h2>当店で人気のスタイル<br>3選</h2>　　　　
-            <div class="best-three">
-                <img src="img/innnercolor_mintgreeen.png">
-            </div>
-            <dl class="style_explanation">
-                <dt id="best1">インナーカラーXミントグリーン</dt><!-- スタイル名 -->
-                <dd>ナチュラルなイメージをベースに<br>ブラウンに緑のメッシュを入れた<br>スタイルです。</dd>
-                <p class="combination">カット、カラー、トリートメント</p>
-                <dl class="Detailed"><!-- スタイル説明 -->
-                    <dt>長さ</dt>
-                    <dd>ロング</dd>
-                    <dt>カラー</dt>
-                    <dd>ブラウン</dd>
-                    <dt>イメージ</dt>
-                    <dd>ナチュラル</dd>
-                </dl>
-            </dl>
+            <h2>当店で人気のスタイル<br>3選</h2>
+            <div class="best3_pc"><!-- PC版レスポンシブ -->
+                <div class="best3_set">
+                    <div class="best-three">
+                        <img src="img/innnercolor_mintgreeen.png">
+                    </div>
+                    <dl class="style_explanation">
+                        <dt id="best1">インナーカラーXミントグリーン</dt><!-- スタイル名 -->
+                        <dd>ナチュラルなイメージをベースに<br>ブラウンに緑のメッシュを入れた<br>スタイルです。</dd>
+                        <p class="combination">カット、カラー、トリートメント</p>
+                        <dl class="Detailed"><!-- スタイル説明 -->
+                            <dt>長さ</dt>
+                            <dd>ロング</dd>
+                            <dt>カラー</dt>
+                            <dd>ブラウン</dd>
+                            <dt>イメージ</dt>
+                            <dd>ナチュラル</dd>
+                        </dl>
+                    </dl>
+                </div>
+                <div class="best3_set">
+                    <div class="best-three">
+                        <img src="img/wcolor_x_green.png">
+                    </div>
+                    <dl class="style_explanation">
+                        <dt id="best2">Wカラーxグリーン</dt><!-- スタイル名 -->
+                        <dd id="Wcolorgreen">自然の緑をベースに<br>グラデーションしたスタイルです。</dd>
+                        <p class="combination">カットxブリーチxカラーxトリートメント</p>
+                        <dl class="Detailed"><!-- スタイル説明 -->
+                            <dt>長さ</dt>
+                            <dd>ショート</dd>
+                            <dt>カラー</dt>
+                            <dd>その他カラー</dd>
+                            <dt>イメージ</dt>
+                            <dd>カジュアルストリート</dd>
+                        </dl>
+                    </dl>
+                </div>
+                <div class="best3_set">
+                    <div class="best-three">
+                        <img src="img/Balayagepink.png">
+                    </div>
+                    <dl class="style_explanation">
+                        <dt id="best3">バイヤージュxピンクベージュ</dt><!-- スタイル名 -->
+                        <dd>定番のバイヤージュに<br>ピンクベージュ系のカラーをした<br>スタイルです。</dd>
+                        <p class="combination">ブリーチ+オンカラー</p>
+                        <dl class="Detailed"><!-- スタイル説明 -->
+                            <dt>長さ</dt>
+                            <dd>ロング</dd>
 
-            <div class="best-three">
-                <img src="img/wcolor_x_green.png">
-            </div>
-            <dl class="style_explanation">
-                <dt id="best2">Wカラーxグリーン</dt><!-- スタイル名 -->
-                <dd>自然の緑をベースに<br>グラデーションしたスタイルです。</dd>
-                <p class="combination">カットxブリーチxカラーxトリートメント</p>
-                <dl class="Detailed"><!-- スタイル説明 -->
-                    <dt>長さ</dt>
-                    <dd>ショート</dd>
-                    <dt>カラー</dt>
-                    <dd>その他カラー</dd>
-                    <dt>イメージ</dt>
-                    <dd>カジュアルストリート</dd>
-                </dl>
-            </dl>
+                            <dt>カラー</dt>
+                            <dd>その他カラー</dd>
 
-            <div class="best-three">
-                <img src="img/Balayagepink.png">
-            </div>
-            <dl class="style_explanation">
-                <dt id="best3">バイヤージュxピンクベージュ</dt><!-- スタイル名 -->
-                <dd>定番のバイヤージュに<br>ピンクベージュ系のカラーをした<br>スタイルです。</dd>
-                <dd class="combination">ブリーチ+オンカラー</dd>
-                <dl class="Detailed"><!-- スタイル説明 -->
-                    <dt>長さ</dt>
-                    <dd>ロング</dd>
-
-                    <dt>カラー</dt>
-                    <dd>その他カラー</dd>
-
-                    <dt>イメージ</dt>
-                    <dd>カジュアルストリート</dd>
-                </dl>
-            </dl>
+                            <dt>イメージ</dt>
+                            <dd>カジュアルストリート</dd>
+                        </dl>
+                    </dl>
+                </div>
+            </div><!-- PC版レスポンシブ -->
             <div class="other">
                 <h2>その他のスタイル</h2>
-                <div class="others">
-                    <img src="img/men'smashxpama.png">
-                </div>
-                <div class="style_explanation">
-                    <dt id="other1">men'sマッシュxパーマ</dt><!-- スタイル名 -->
-                    <dd>男性のお客様に<br>人気のスタイルです。</dd>
-                    <dd class="combination">カットxパーマ</dd>
-                    <div class="Detailed"><!-- スタイル説明 -->
-                        <dt>長さ</dt>
-                        <dd>ベリーショート</dd>
-                        <dt>カラー</dt>
-                        <dd>アッシュ・ブラック</dd>
-                        <dt>イメージ</dt>
-                        <dd>ナチュラル</dd>
+                <div class="best3_pc"><!-- PC版レスポンシブ -->
+                    <div class="other_set">
+                        <div class="others">
+                            <img src="img/men'smashxpama.png">
+                        </div>
+                        <dl class="style_explanation">
+                            <dt id="other1">men'sマッシュxパーマ</dt><!-- スタイル名 -->
+                            <dd>男性のお客様に<br>人気のスタイルです。</dd>
+                            <p class="combination">カットxパーマ</p>
+                            <dl class="Detailed"><!-- スタイル説明 -->
+                                <dt>長さ</dt>
+                                <dd>ベリーショート</dd>
+                                <dt>カラー</dt>
+                                <dd>アッシュ・ブラック</dd>
+                                <dt>イメージ</dt>
+                                <dd>ナチュラル</dd>
+                            </dl>
+                    </div>
+                    <div class="other_set">
+                        <div class="others">
+                            <img src="img/baiyaju+pinkgreyju.png">
+                        </div>
+                        <div class="style_explanation">
+                            <dt id="other2">バイレヤージュ+ピンクグレージュ</p><!-- スタイル名 -->
+                            <dd>バイレヤージュが髪に動きを与えます</dd>
+                            <p class="combination">カット、カラー、トリートメント</p>
+                            <dl class="Detailed"><!-- スタイル説明 -->
+                                <dt>長さ</dt>
+                                <dd>ミディアム</dd>
+                                <dt>カラー</dt>
+                                <dd>レッドピンク</dd>
+                                <dt>イメージ</dt>
+                                <dd>ナチュラル</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="other_set">
+                        <div class="others">
+                            <img src="img/bi-silett-medium.png">
+                        </div>
+
+                        <div class="style_explanation">
+                            <dt id="other3">美シルエットミディアム</dt><!-- スタイル名 -->
+                            <dd>くびれ感ある綺麗なミディアムヘアです</dd>
+                            <p class="combination">カット+カラー</p>
+                            <dl class="Detailed"><!-- スタイル説明 -->
+                                <dt>長さ</dt>
+                                <dd>ミディアム</dd>
+                                <dt>カラー</dt>
+                                <dd>ブラウンベージュ</dd>
+                                <dt>イメージ</dt>
+                                <dd>ナチュラル</dd>
+                            </dl>
+                        </div>
                     </div>
                 </div>
-                <div class="others">
-                    <img src="img/baiyaju+pinkgreyju.png">
-                </div>
-                <div class="style_explanation">
-                    <dt id="other2">バイレヤージュ+ピンクグレージュ</p><!-- スタイル名 -->
-                    <dd>バイレヤージュが髪に動きを与えます</dd>
-                    <p class="combination">カット、カラー、トリートメント</p>
-                    <dl class="Detailed"><!-- スタイル説明 -->
-                        <dt>長さ</dt>
-                        <dd>ミディアム</dd>
-                        <dt>カラー</dt>
-                        <dd>レッドピンク</dd>
-                        <dt>イメージ</dt>
-                        <dd>ナチュラル</dd>
-                    </dl>
-                </div>
+                <div class="best3_pc">
+                    <div class="other_set">
+                        <div class="others">
+                            <img src="img/nopin-hairset.png">
+                        </div>
+                        <div class="style_explanation">
+                            <dt id="other4">ピンなしヘアセット☆</dt><!-- スタイル名 -->
+                            <dd>余興のためピンを使わないアップ<br>ピンが苦手な方にもオススメです</dd>
+                            <p class="combination">アップ</p>
+                            <dl class="Detailed"><!-- スタイル説明 -->
+                                <dt>長さ</dt>
+                                <dd>セミロング</dd>
+                                <dt>カラー</dt>
+                                <dd>アッシュブラック</dd>
+                                <dt>イメージ</dt>
+                                <dd>ナチュラル</dd>
+                            </dl>
+                        </div>
+                    </div>
 
-                <div class="others">
-                    <img src="img/bi-silett-medium.png">
-                </div>
 
-                <div class="style_explanation">
-                    <dt id="other3">美シルエットミディアム</dt><!-- スタイル名 -->
-                    <dd>くびれ感ある綺麗な<br>ミディアムヘアです</dd>
-                    <dd class="combination">カット+カラー</p>
-                        <dl class="Detailed"><!-- スタイル説明 -->
-                            <dt>長さ</dt>
-                            <dd>ミディアム</dd>
+                    <div class="other_set">
+                        <div class="others">
+                            <img src="img/natural-bob.png">
+                        </div>
 
-                            <dt>カラー</dt>
-                            <dd>ブラウンベージュ</dd>
-
-                            <dt>イメージ</dt>
-                            <dd>ナチュラル</dd>
-                        </dl>
+                        <div class="style_explanation">
+                            <dt id="other5">ナチュラルボブ</dt><!-- スタイル名 -->
+                            <dd>程よい外ハネと<br>ナチュラルなインナーカラー</dd>
+                            <p class="combination">カット、インナーカラー、トリートメント</p>
+                            <dl class="Detailed"><!-- スタイル説明 -->
+                                <dt>長さ</dt>
+                                <dd>ミディアム</dd>
+                                <dt>カラー</dt>
+                                <dd>ブラウンベージュ</dd>
+                                <dt>イメージ</dt>
+                                <dd>ナチュラル</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="other_set">
+                        <div class="others">
+                            <img src="img/innerparpull+grayju.png">
+                        </div>
+                        <div class="style_explanation">
+                            <dt id="other6">インナーパープル+グレージュ</dt><!-- スタイル名 -->
+                            <dd>ウェット感のあるスタイリング剤で<br>簡単セット</dd>
+                            <p class="combination">カット、カラー、インナーカラー</p>
+                            <dl class="Detailed"><!-- スタイル説明 -->
+                                <dt>長さ</dt>
+                                <dd>ショート</dd>
+                                <dt>カラー</dt>
+                                <dd>アッシュブラック</dd>
+                                <dt>イメージ</dt>
+                                <dd>ナチュラル</dd>
+                            </dl>
+                        </div>
+                    </div>
                 </div>
-                <div class="others">
-                    <img src="img/nopin-hairset.png">
-                </div>
-                <div class="style_explanation">
-                    <dt id="other4">ピンなしヘアセット☆</dt><!-- スタイル名 -->
-                    <dd>余興のためピンを使わないアップ<br>ピンが苦手な方にもオススメです</dd>
-                    <dd class="combination">アップ</dd>
-                    <dl class="Detailed"><!-- スタイル説明 -->
-                        <dt>長さ</dt>
-                        <dd>セミロング</dd>
-                        <dt>カラー</dt>
-                        <dd>アッシュブラック</dd>
-                        <dt>イメージ</dt>
-                        <dd>ナチュラル</dd>
-                    </dl>
-                </div>
-                <div class="others">
-                    <img src="img/natural-bob.png">
-                </div>
-
-                <dl class="style_explanation">
-                    <dt id="other5">ナチュラルボブ</dt><!-- スタイル名 -->
-                    <dd>程よい外ハネと<br>ナチュラルなインナーカラー</dd>
-                    <dd class="combination">カット、インナーカラー、トリートメント</p>
-                        <dl class="Detailed"><!-- スタイル説明 -->
-                            <dt>長さ</dt>
-                            <dd>ミディアム</dd>
-                            <dt>カラー</dt>
-                            <dd>ブラウンベージュ</dd>
-                            <dt>イメージ</dt>
-                            <dd>ナチュラル</dd>
-                        </dl>
-                </dl>
             </div>
         </div>
         </div>
@@ -249,104 +288,122 @@
             <h2>特徴</h2>
             <dl>
                 <div class="service">
-                    <dd>安心学生料金!!</dd>
-                    <dt>小学生から高校生までのお客様はカットが<br>通常より格安で提供しています</dt>
-                    <dt>詳しくはメニューへ</dt>
+                    <dt>安心学生料金!!</dt>
+                    <dd>小学生から高校生までのお客様はカットが<br>通常より格安で提供しています</dd>
+                    <dd>詳しくはメニューへ</dd>
                 </div>
                 <div class="service">
-                    <dd>くつろげるサービスを提供</dd>
-                    <dt>施術中などにタブレットや雑誌をご用意しております。<br>またドリンクのサービスもしております。</dt>
+                    <dt>くつろげるサービスを提供</dt>
+                    <dd>施術中などにタブレットや雑誌をご用意しております。<br>またドリンクのサービスもしております。</dd>
                 </div>
                 <div class="service">
-                    <dd>メンバーズカードをお作りします</dd>
-                    <dt>一回行くことにポイントがたまるカードを配布してます。<br>前回の来店日や施術内容を確認できます。</dt>
+                    <dt>メンバーズカードをお作りします</dt>
+                    <dd>一回行くことにポイントがたまるカードを配布してます。<br>前回の来店日や施術内容を確認できます。</dd>
                 </div>
             </dl>
         </div>
     </section>
     <section id="customer">
         <h1>お客様からの声</h1>
+        <div class="custmer_voice">
+            <img src="img/customer_voice(woman).jpg">
+        </div>
         <a class="enquete"
             href="https://docs.google.com/forms/d/e/1FAIpQLSdiQe5AxQUGLfRTnbLWn78vZqqOjPCPjQo-g210NnmcSqWzuQ/viewform?usp=sf_link">あなたの声を聞かせてください</a>
     </section>
     <section id="sozai">
         <div class="sozai"><!-- 素材コンテンツ編集 -->
             <h1>素材</h1>
-            <img src="img/NAPLA.png">
-            <p>お客様の生活に寄り添ったナチュラルな髪型に仕上げたいということで<br>ナチュラルさをプラスするNAPLAを使用しております。</p>
-            　　
+            <figure>
+                <img src="img/NAPLA.png">
+                <figcaption>NAPLA</figcaption>
+                <p>お客様の生活に寄り添ったナチュラルな髪型に仕上げたいということで<br>ナチュラルさをプラスするNAPLAを使用しております。</p>
+            </figure>　　
             <h2>オススメ一覧</h2>
-            　　　<div class="recommendation"><!-- PC用レスポンシブ -->
-                <img src="img/relavel shanpoo.png">
-                <dl>
+            <div class="recommendation_pc">
+                <dl class="recommendation"><!-- PC用レスポンシブ -->
+                    <img src="img/relavel shanpoo.png">
+
                     <dt>RELAVEL CMC SHAMPOO & HAIR MASK</dt>
                     <dd>植物由来の保温成分を配合し、<br>髪をしっとりとした質感に仕上げます</dd>
                 </dl>
-                <img src="img/n.base spray.png">
-                <dl>
+
+                <dl class="recommendation">
+                    <img src="img/n.base spray.png">
                     <dt>N.BASE.SPLAY</dt>
                     <dd>柔らかく湯溜め久毛先のために<br>スタイリング前に全体に吹きつけて、熱から髪を守ります。</dd>
                 </dl>
             </div>
-        </div><!-- 素材コンテンツ編集 -->
     </section>
     <section id="menu">
         <div class="menu"><!-- メニューコンテンツの編集 -->
             <h1>メニュー</h1>
-            　　<div class="menutittle" id="cut_PC">
-                カット
+            <div class="menu_pc">
+                <div id="cut_PC">
+                    　　<div class="menutittle">
+                        カット
+                    </div>
+                    <dl class="menu_List">
+                        <dt>ノーマル</dt>
+                        <dd>4000円</dd>
+                        <dt>スクールカット(中・高校生)</dt>
+                        <dd>3300円</dd>
+                        <dt>チャイルドカット</dt>
+                        <dd>2750円</dd>
+                        <dt>前髪カット</dt>
+                        <dd>770円</dd>
+                    </dl>
+                </div>
+                <div id="color_pc">
+                    <div class="menutittle">
+                        カラー
+                    </div>
+                    <dl class="menu_List">
+                        <dt>リタッチカラー</dt>
+                        <dd>4400円</dd>
+                        <dt>全体カラー</dt>
+                        <dd>5500円</dd>
+                        <dt>ブリーチ</dt>
+                        <dd>6050円</dd>
+                        <dt>ダブルカラー</dt>
+                        <dd>9900円</dd>
+                        <dt>full ウィービングorスライシング</dt>
+                        <dd>6600円</dd>
+                        <dt>マニキュア</dt>
+                        <dd>6050円</dd>
+                        <dt>ヘナ</dt>
+                        <dd>6600円</dd>
+                        <dt>トナーカラー</dt>
+                        <dd>2200円</dd>
+                    </dl>
+                </div>
             </div>
-            <dl class="menu_List" id="cut_PC">
-                <dt>ノーマル</dt>
-                <dd>4000円</dd>
-                <dt>スクールカット(中・高校生)</dt>
-                <dd>3300円</dd>
-                <dt>チャイルドカット</dt>
-                <dd>2750円</dd>
-                <dt>前髪カット</dt>
-                <dd>770円</dd>
-            </dl>
-            <div class="menutittle">
-                カラー
+            <div class="menu_pc">
+                <div id="parma_pc">
+                    <div class="menutittle">
+                        パーマ
+                    </div>
+                    <dl class="menu_List">
+                        <dt>ポイント</dt>
+                        <dd>4400円</dd>
+                        <dt>デザイン</dt>
+                        <dd>9900円</dd>
+                        <dt>デジタル</dt>
+                        <dd>14300円</dd>
+                    </dl>
+                </div>
+                <div id="torieatment_PC">
+                    <div class="menutittle">
+                        トリートメント
+                    </div>
+                    <dl class="menu_List">
+                        <dt>Link3ステップ</dt>
+                        <dd>3300円</dd>
+                        <dt>髪質改善ステップ+ホームケア</dt>
+                        <dd>4400円</dd>
+                    </dl>
+                </div>
             </div>
-            <dl class="menu_List">
-                <dt>リタッチカラー</dt>
-                <dd>4400円</dd>
-                <dt>全体カラー</dt>
-                <dd>5500円</dd>
-                <dt>ブリーチ</dt>
-                <dd>6050円</dd>
-                <dt>ダブルカラー</dt>
-                <dd>9900円</dd>
-                <dt>full ウィービングorスライシング</dt>
-                <dd>6600円</dd>
-                <dt>マニキュア</dt>
-                <dd>6050円</dd>
-                <dt>ヘナ</dt>
-                <dd>6600円</dd>
-                <dt>トナーカラー</dt>
-                <dd>2200円</dd>
-            </dl>
-            <div class="menutittle">
-                パーマ
-            </div>
-            <dl class="menu_List">
-                <dt>ポイント</dt>
-                <dd>4400円</dd>
-                <dt>デザイン</dt>
-                <dd>9900円</dd>
-                <dt>デジタル</dt>
-                <dd>14300円</dd>
-            </dl>
-            <div class="menutittle">
-                トリートメント
-            </div>
-            <dl class="menu_List">
-                <dt>Link3ステップ</dt>
-                <dd>3300円</dd>
-                <dt>髪質改善ステップ+ホームケア</dt>
-                <dd>4400円</dd>
-            </dl>
         </div><!-- メニューコンテンツの編集 -->
     </section>
     <section id="access">
@@ -361,31 +418,35 @@
         </div>
 
         <address>
-            千葉県千葉市美浜区若葉３ー２ー１６<br>イオンスタイル幕張ベイパークVillage３
+            千葉県千葉市美浜区若葉3-2-16<br>イオンスタイル幕張ベイパークVillage3</address>
+        <address id="train">
+            JR京葉線 海浜幕張駅北口から徒歩10分
         </address>
-        <address>
-            JR京葉線　海浜幕張駅北口から徒歩１０分
-        </address>
-        <address></address>
         <dl class="timeandday">
             <dt>営業時間</dt>
-            <dd>10:00~20:00（カット最終受付19:00)</dd>
+            <dd>10:00~20:00（最終受付19:00)</dd>
             <dt>定休日</dt>
             <dd>年中無休</dd>
             <dt>電話番号</dt>
             <dd>043-307-7973</dd>
         </dl>
-        </address>
+
         <div class="SNS">
             <h2>SNS</h2>
             <p>Logueのスタイリストさんの様子が満載</p>
             <p>instagrum</p>
-            <a href="https://www.instagram.com/logue.kaihinmakuhari/" img src="img/instagramロゴ.png">
+            <a href="https://www.instagram.com/logue.kaihinmakuhari/"><img src="img/instagramlogo.png"
+                    alt="Instagramのロゴマーク"></a>
+
+            <p>当店で使えるクーポンやネットからでの予約はこちらから</p>
+            <p>HOT PEPPER BEAUTY</p>
+            <a href="https://beauty.hotpepper.jp/slnH000041494/"><img id="hotpepperbeauty"
+                    src="img/Beauty_Logo_270_90.gif"></a>
         </div>
     </section>
 
     <footer>
-        <a href="#" img src="img/return_top.png" alt="一番上に戻るボタン" style="width: 120px; height: 70px;">
+        <a href="#"><img src="img/return_top.png" alt="一番上に戻るボタン" style="width: 120px; height: 70px;"></a>
     </footer>
 </body>
 

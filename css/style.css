@@ -31,7 +31,7 @@ a {
     /*スクロールしても固定されてる状態のまま*/
     position: fixed;
     right: 10px;
-    bottom: 12px;
+    bottom: 18px;
     background: #FFCD70;
     border-radius: 14px;
     padding: 13px;
@@ -89,26 +89,42 @@ a {
 #other1 {
     color: #000000;
     font-family: 'Sylfaen';
+    font-size: 16px;
+    padding: 5px;
 }
 
 #other2 {
     color: #F16682;
+    font-size: 16px;
+    padding: 10px;
 }
 
 #other3 {
     color: #937B69;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 16px
 }
 
 #other4 {
     color: #201D1D;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 16px
 }
 
 #other5 {
     color: #937B69;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 16px
 }
 
 #other6 {
     color: #201D1D;
+    font-size: 13px;
+    padding: 10px;
+    margin-bottom: 16px
 }
 
 /*新規様向けへ*/
@@ -270,18 +286,43 @@ address {
     text-align: center;
 }
 
+.timeandday {
+    margin: 1px;
+}
+
 .timeandday>dt {
     text-align: left;
+    margin: -4px;
+    margin-left: 36px;
 }
 
 .timeandday>dd {
     text-align: right;
+    margin-right: 40px;
+}
+
+.SNS img {
+    width: 110px;
+    height: 90px;
 }
 
 /*テキスト関係*/
 
 /*PC版↓*/
 @media (min-width: 950px) and (max-width: 1920px) {
+
+
+    .reserve {
+        position: fixed;
+        right: 30px;
+        bottom: 18px;
+        background: #FFCD70;
+        border-radius: 70px;
+        padding: 30px;
+        padding-block: revert;
+        height: 55px;
+        font-size: 40px;
+    }
 
     /*ファーストビュー*/
     .logo {
@@ -302,10 +343,13 @@ address {
 
     p {
         text-align: center;
+        font-size: 45px;
     }
 
     figcaption {
         text-align: center;
+        font-size: 55px;
+        padding: 28px;
     }
 
     h1 {
@@ -315,6 +359,7 @@ address {
 
     h2 {
         text-align: center;
+        font-size: 100px;
     }
 
     dt {
@@ -366,7 +411,7 @@ address {
         padding: auto;
         background: #DCC7AB;
         width: 100%;
-        height: 560px;
+        height: 900px;
     }
 
     #catchcopy {
@@ -376,10 +421,148 @@ address {
     }
 
     .bylougue>p {
-        font-size: 40px;
+        font-size: 53px;
+        padding: 59px;
     }
 
     /*髪型設定*/
+
+    #from_yung {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .best-three {
+        width: 450px;
+        height: 480px;
+        margin: auto;
+    }
+
+    /*髪型説明*/
+
+    .other {
+        padding: 10px;
+    }
+
+    .style_explanation>dd {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .Detailed {
+        font-size: 13px;
+        margin-bottom: 7px;
+    }
+
+    .Detailed>dt {
+        font-size: 30px;
+        text-align: center;
+        margin-right: 102px;
+        margin-top: 9px;
+        margin-bottom: -42px;
+    }
+
+    .Detailed>dd {
+        font-size: 27px;
+        margin-left: 168px;
+    }
+
+    #Wcolorgreen {
+        margin-bottom: 50px;
+    }
+
+    .style_explanation {
+        border: none;
+        background-color: #FFFFFF;
+        width: 460px;
+        height: 440px;
+        margin: auto;
+        text-align: center;
+    }
+
+    /*ベスト3*/
+    #best1 {
+        color: #B28169;
+        font-size: 30px;
+        font-family: "Sylfaen";
+        padding: 4px;
+        margin-bottom: 5px;
+    }
+
+    #best2 {
+        color: #82D0C8;
+        font-size: 30px;
+        font-family: "Sylfaen";
+        padding: 4px;
+    }
+
+    #best3 {
+        color: #DE74B7;
+        font-size: 30px;
+        font-family: "Sylfaen";
+        padding: 10px;
+    }
+
+    .combination {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    /*その他のスタイル*/
+    #other1 {
+        color: #000000;
+        font-family: 'Sylfaen';
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    #other2 {
+        color: #F16682;
+        font-size: 30px;
+        padding: 10px;
+        margin-bottom: 18px;
+    }
+
+    #other3 {
+        color: #937B69;
+        font-size: 30px;
+        padding: 10px;
+        margin-bottom: 16px
+    }
+
+    #other4 {
+        color: #201D1D;
+        font-size: 30px;
+        padding: 10px;
+        margin-bottom: 16px
+    }
+
+    #other5 {
+        color: #937B69;
+        font-size: 30px;
+        padding: 10px;
+        margin-bottom: 16px
+    }
+
+    #other6 {
+        color: #201D1D;
+        font-size: 30px;
+        padding: 10px;
+        margin-bottom: 16px
+    }
+
+    .best3_set {
+        padding: 90px;
+    }
+
+    .other_set {
+        padding: 90px;
+    }
+
+    .best3_pc {
+        display: flex;
+    }
+
     .styleresponsiv {
         display: flex;
 
@@ -390,42 +573,88 @@ address {
 
     }
 
+    .others {
+        width: 450px;
+        height: 480px;
+        margin: auto;
+    }
+
+    /*お客様の声*/
+    .custmer_voice {
+        width: 1200px;
+        height: 600px;
+        margin: auto;
+        margin-bottom: 50px;
+
+    }
+
     /*素材コンテンツ > オススメ(PC用)*/
 
+    /*素材コンテンツ*/
+
+    figure img {
+        width: 1270px;
+        height: 1610px;
+    }
+
+    figcaption {
+        font-size: 100px;
+    }
+
+    ;
+
+    .sozai img {
+        width: 1270px;
+        height: 1270px;
+    }
+
+    .sozai dt {
+        font-family: 'Roboto';
+        font-weight: bold;
+        margin: auto;
+        font-size: 40px;
+    }
+
     .recommendation {
+        margin: auto;
+    }
+
+    .recommendation img {
+        width: 627px;
+        height: 627px;
+        margin-bottom: 20px;
+    }
+
+    .recommendation_pc {
         display: flex;
     }
 
-    .recommendation>dt {
-        display: flex;
-    }
 
-    .recommendation>dd {
-        display: flex;
-    }
 
     /*新規様コンテンツ*/
 
     .service {
-        padding: 23px;
+        padding: 40px;
         margin: auto;
         background: #FFF;
         width: 1480px;
-        height: 305px;
+        height: 575px;
         border-radius: 11px;
         margin-bottom: 14px;
     }
 
     .service>dd {
+        font-size: 45px;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .service>dt {
+
         font-size: 90px;
         text-align: center;
         font-weight: bold;
         margin-bottom: 14px;
-    }
-
-    .service>dt {
-        font-size: 14px;
-        text-align: center;
     }
 
     #cheap_price {
@@ -451,26 +680,108 @@ address {
         border-radius: 8px;
         background: #DEB887;
         color: #000000;
+        font-size: 50px;
         font-weight: 100;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 250px;
+        width: 780px;
         margin-bottom: 20px;
         box-sizing: border-box;
-        height: 64px;
+        height: 210px;
         margin: auto;
     }
 
+    iframe {
+        width: 850px;
+        height: 850px;
+        border: 0
+    }
+
+    #Lougue_billding {
+        width: 850px;
+        height: 850px;
+    }
+
+    /*メニュー関連*/
+
+    .menu_pc {
+        display: flex;
+        margin: 240px;
+    }
+
+    .menutittle {
+        border-top: 5px solid #A56720;
+        border-bottom: 5px solid #A56720;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+        font-size: 60px;
+    }
+
+    .menu_List {
+        margin-bottom: 15px;
+    }
+
+    .menu_List dt {
+        text-align: left;
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .menu_List dd {
+        text-align: right;
+        font-family: 'Roboto';
+        font-weight: BOLD;
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    #cut_PC {}
+
+    #color_pc {
+        margin: 24px;
+        margin-right: 55px;
+    }
+
+    #parma_pc {
+        margin-top: -980px;
+    }
+
+    #torieatment_PC {
+        margin-left: 21px;
+        margin-top: -243px;
+    }
+
+    /*アクセス関連*/
+
+    address {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .timeandday {
+        margin: 1px;
+    }
+
+    .timeandday>dt {
+        text-align: center;
+        margin: 10px;
+        font-size: 40px;
+    }
+
+    .timeandday>dd {
+        text-align: center;
+        margin-right: 5px;
+        font-size: 35px;
+    }
+
+    #hotpepperbeauty {
+        width: 393px;
+        height: 120px;
+    }
 }
-
-/*キービジュアル関連*/
-
-
-
-
-
-
 
 @media (min-width: 200px) and (max-width: 500px) {
 
@@ -524,8 +835,8 @@ address {
     }
 
     .style_explanation>dd {
-        font-size: 1px;
-        margin-bottom: 10px;
+        font-size: 10px;
+        margin-bottom: 5px;
     }
 
 
@@ -549,15 +860,17 @@ address {
         margin-bottom: 14px;
     }
 
-    .service>dd {
+
+    .service>dt {
+
         font-family: 'BIZ UDPゴシック';
         font-size: 20px;
         text-align: center;
         font-weight: bold;
-        margin-bottom: 14px;
+        margin-bottom: 14px
     }
 
-    .service>dt {
+    .service>dd {
         font-size: 14px;
         text-align: center;
         margin-bottom: 15px;
@@ -578,6 +891,16 @@ address {
     }
 
     /*お客様からの声*/
+
+    /*お客様の声*/
+    .custmer_voice {
+        width: 370px;
+        height: 180px;
+        margin: auto;
+        margin-bottom: 50px;
+
+    }
+
     .enquete {
         position: relative;
         border: none;
@@ -601,6 +924,10 @@ address {
     .sozai {
         width: 270px;
         margin: auto;
+    }
+
+    main {
+        font-size: 20px;
     }
 
     .sozai dl {
@@ -634,6 +961,8 @@ address {
     .menu_List dd {
         text-align: right;
         margin-right: 45px;
+        font-family: 'Roboto';
+        font-weight: BOLD;
     }
 
 
@@ -655,7 +984,7 @@ address {
         height: 32px;
         position: fixed;
         border: none;
-        bottom: 14px;
+        bottom: 16px;
         left: 9px;
 
         z-index: 100;
@@ -673,22 +1002,22 @@ address {
     }
 
     .hamburger {
-        width: 40px;
-        height: 32px;
+        width: 30px;
+        height: 25px;
         position: fixed;
-        bottom: 10px;
+        bottom: 16px;
         right: 16px;
-        background: #FFCD70;
         z-index: 1000;
     }
 
     .hamburger_bar {
         display: block;
         width: 100%;
-        height: 4px;
+        height: 3px;
         position: absolute;
         left: 0;
         background: #000;
+        border-radius: 100px;
         transition: top 0.24s, transform 0.24s, opacity 0.24s;
     }
 
@@ -734,12 +1063,10 @@ address {
         align-items: center;
         opacity: 0;
         transition: opacity 0.24s;
-        pointer-events: none;
     }
 
     .nav.is_active {
         opacity: 1;
-        pointer-events: auto;
     }
 
     .nav_list {
@@ -783,12 +1110,14 @@ address {
         background: #DCD0B9;
         /*動き*/
         transition: all 0.3s;
+        pointer-events: none;
     }
 
     /*アクティブクラスがついたら透過なしにして最前面へ*/
     #g-nav.panelactive {
         opacity: 1;
         z-index: 999;
+        pointer-events: auto;
     }
 
     /*ナビゲーションの縦スクロール*/
@@ -835,9 +1164,32 @@ address {
         font-weight: bold;
     }
 
+
+
+
     /*アクセス関連*/
     #Lougue_billding {
         width: 314px;
         height: 314px;
     }
+
+    #train {
+        margin-bottom: 15px;
+    }
+
+    #unpaid {
+        margin-right: 221px;
+        margin-top: -24px;
+    }
+
+    #phone {
+        margin-top: -25px;
+        margin-right: 171px;
+    }
+
+    #hotpepperbeauty {
+        width: 250px;
+        height: 80px;
+    }
+
 }

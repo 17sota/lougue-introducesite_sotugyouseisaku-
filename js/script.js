@@ -1,3 +1,4 @@
+
 'use start'
 
 $(function () {
@@ -9,18 +10,34 @@ $(function () {
         $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
     });
 
+    // スクロール
+    $('a[href^="#"]').click(function () {
+        var speed = 400;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({ scrollTop: position }, speed, 'swing');
+        return false;
+    });
 
-});
-
-$("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
-    $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
-    $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
-});
-
-// グローバルナビメニューのリンクをクリックしたらページを閉じる
-$(function () {
+    // グローバルナビメニューのリンクをクリックしたらページを閉じる
     $("#g-nav ul li a").on("click", function () {
-        $("#g-nav ul").toggleClass();
-        $("body").removeClass("open");
+        $(".hamburger_bar").removeClass("is_active");
+        $("#g-nav").removeClass('panelactive');
+        return false;
     });
 });
+
+document.querySelectorAll('a[href^="#"]').formach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault()
+
+        // const target = document.querySelector(link.hash),
+        //   adjust = 50,
+        //    offsetTop = window.pageYOffset + target.getBoundingClientRect().top
+
+        console.log(window.pageoffment)
+    })
+})
+
+
