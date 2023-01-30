@@ -17,6 +17,8 @@ li {
     text-decoration: none
 }
 
+
+
 /*背景画像*/
 
 
@@ -269,6 +271,8 @@ img {
     height: 180px;
     margin: auto;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /*メニュー関連*/
@@ -349,6 +353,7 @@ address {
     p {
         text-align: center;
         font-size: 45px;
+        color: #333;
     }
 
     figcaption {
@@ -360,11 +365,13 @@ address {
     h1 {
         text-align: center;
         font-size: 124px;
+        padding: 40px;
     }
 
     h2 {
         text-align: center;
         font-size: 100px;
+        padding: 40px;
     }
 
     dt {
@@ -402,7 +409,6 @@ address {
     .nav_item a {
         display: block;
         padding: 8px 0;
-        border-bottom: 1px solid #eee;
         text-decoration: none;
         color: #333;
     }
@@ -470,6 +476,7 @@ address {
     .Detailed>dd {
         font-size: 27px;
         margin-left: 165px;
+        line-height: 120%
     }
 
     #Wcolorgreen {
@@ -584,14 +591,7 @@ address {
         margin: auto;
     }
 
-    /*お客様の声*/
-    .custmer_voice {
-        width: 1200px;
-        height: 600px;
-        margin: auto;
-        margin-bottom: 50px;
 
-    }
 
     /*素材コンテンツ > オススメ(PC用)*/
 
@@ -603,7 +603,8 @@ address {
     }
 
     figcaption {
-        font-size: 100px;
+        padding: 40px;
+        font-size: 40px;
     }
 
     .sozai img {
@@ -681,6 +682,12 @@ address {
     }
 
     /*お客様からの声*/
+
+    .customer_voices {
+        padding: 40px;
+
+    }
+
     .customer_voice_woman {
         border: 5px solid #FFCAEB;
         background: #FFF;
@@ -941,8 +948,8 @@ address {
     /*インテリア関連*/
 
     #interior_mean {
-        font-size: 19px;
-        margin-bottom: 15px;
+        font-size: 15px;
+        margin: 15px;
     }
 
     /*新規コンテンツ関連*/
@@ -994,8 +1001,7 @@ address {
         background: #FFF;
         width: 350px;
         height: 200px;
-        margin: auto;
-        margin-bottom: 10px;
+        margin: 20px;
     }
 
     .customer_voice_man {
@@ -1003,14 +1009,16 @@ address {
         background: #FFF;
         width: 350px;
         height: 200px;
-        margin: auto;
+        margin: 20px;
         margin-bottom: 10px;
     }
 
     .customer_voice_woman p {
         margin: 14px;
-        font-size: 5px;
+        font-size: 13px;
         margin-right: 113px;
+        line-height: 1.8;
+        text-align: left;
     }
 
     .customer_voice_woman img {
@@ -1026,318 +1034,321 @@ address {
     }
 
     .customer_voice_man p {
-        margin: 35px;
-        font-size: 5px;
-        margin-right: 135px;
-    }
-
-    .customer_voice_man img {
-        margin-left: 222px;
-        margin-bottom: -109px;
-        width: 94px;
-        height: 94px;
-    }
-
-    .customer_voice_man dl {
-        display: flex;
-        margin-left: 225px;
-    }
-
-    .enquete {
-        position: relative;
-        border: none;
-        appearance: none;
-        outline: 0;
-        border-radius: 8px;
-        background: #DEB887;
-        color: #000000;
-        font-weight: 100;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 250px;
-        margin-bottom: 20px;
-        box-sizing: border-box;
-        height: 64px;
-        margin: auto;
-    }
-
-    /*素材コンテンツ*/
-    .sozai {
-        width: 270px;
-        margin: auto;
-    }
-
-    main {
-        font-size: 20px;
-    }
-
-    .sozai dl {
-        margin: 18px;
-    }
-
-    .sozai dt {
-        font-family: 'Roboto';
-        font-weight: bold;
-        margin: auto;
-
-    }
-
-    .sozai dd {
-        font-size: 15px;
-    }
-
-
-    /*メニュー関連*/
-
-    .menu_List {
-        margin-bottom: 15px;
-    }
-
-    .menu_List dt {
-        width: calc();
+        margin: 14px;
+        font-size: 13px;
+        margin-right: 133px;
+        line-height: 1.8;
         text-align: left;
-        margin-left: 40px;
     }
+}
 
-    .menu_List dd {
-        text-align: right;
-        margin-right: 45px;
-        font-family: 'Roboto';
-        font-weight: BOLD;
-    }
+.customer_voice_man img {
+    margin-left: 222px;
+    margin-bottom: -109px;
+    width: 94px;
+    height: 94px;
+}
+
+.customer_voice_man dl {
+    display: flex;
+    margin-left: 225px;
+}
+
+.enquete {
+    position: relative;
+    border: none;
+    appearance: none;
+    outline: 0;
+    border-radius: 8px;
+    background: #DEB887;
+    color: #000000;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    height: 64px;
+    margin: auto;
+}
+
+/*素材コンテンツ*/
+.sozai {
+    width: 270px;
+    margin: auto;
+}
+
+main {
+    font-size: 20px;
+}
+
+.sozai dl {
+    margin: 18px;
+}
+
+.sozai dt {
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin: auto;
+
+}
+
+.sozai dd {
+    font-size: 15px;
+}
 
 
+/*メニュー関連*/
 
+.menu_List {
+    margin-bottom: 15px;
+}
 
+.menu_List dt {
+    width: calc();
+    text-align: left;
+    margin-left: 40px;
+}
 
-    /*ハンバーガーメニュー*/
-
-    .consts-body {
-        position: relative;
-        background: #eee;
-        width: 400px;
-        height: 600px;
-        margin: 0 auto;
-    }
-
-    .hamburger {
-        width: 40px;
-        height: 32px;
-        position: fixed;
-        border: none;
-        bottom: 16px;
-        left: 9px;
-
-        z-index: 100;
-    }
-
-
-
-
-
-    /*メニュー線設定*/
-    .conts-body {
-        position: relative;
-        background: #eee;
-        margin: 0 auto;
-    }
-
-    .hamburger {
-        width: 30px;
-        height: 25px;
-        position: fixed;
-        bottom: 16px;
-        right: 16px;
-        z-index: 1000;
-    }
-
-    .hamburger_bar {
-        display: block;
-        width: 100%;
-        height: 3px;
-        position: absolute;
-        left: 0;
-        background: #000;
-        border-radius: 100px;
-        transition: top 0.24s, transform 0.24s, opacity 0.24s;
-    }
-
-    .hamburger_bar:nth-child(1) {
-        top: 0;
-    }
-
-    .hamburger_bar:nth-child(2) {
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .hamburger_bar:nth-child(3) {
-        top: 100%;
-        transform: translateY(-100%);
-    }
-
-    .hamburger_bar.is_active:nth-child(1) {
-        top: 50%;
-        transform: translateY(-50%) rotate(135deg);
-    }
-
-    .hamburger_bar.is_active:nth-child(2) {
-        transform: translate(50%, -50%);
-        opacity: 0;
-    }
-
-    .hamburger_bar.is_active:nth-child(3) {
-        top: 50%;
-        transform: translateY(-50%) rotate(-135deg);
-    }
-
-    .nav {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: 99;
-        background: #a0a0a0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        transition: opacity 0.24s;
-    }
-
-    .nav.is_active {
-        opacity: 1;
-    }
-
-    .nav_list {
-        position: absolute;
-        flex-direction: column;
-        gap: 32px;
-        background-color: #DCD0B9;
-    }
-
-    /* リセットCSS */
-    button {
-        border-color: transparent;
-        background: transparent;
-        cursor: pointer;
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    /*========= ナビゲーションのためのCSS ===============*/
-
-    #g-nav {
-        /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
-        position: fixed;
-        z-index: -1;
-        opacity: 0;
-        /*はじめは透過0*/
-        /*ナビの位置と形状*/
-        top: 0;
-        width: 100%;
-        height: 100vh;
-        /*ナビの高さ*/
-        background: #DCD0B9;
-        /*動き*/
-        transition: all 0.3s;
-        pointer-events: none;
-    }
-
-    /*アクティブクラスがついたら透過なしにして最前面へ*/
-    #g-nav.panelactive {
-        opacity: 1;
-        z-index: 999;
-        pointer-events: auto;
-    }
-
-    /*ナビゲーションの縦スクロール*/
-    #g-nav.panelactive #g-nav-list {
-        /*ナビの数が増えた場合縦スクロール*/
-        position: fixed;
-        z-index: 999;
-        width: 100%;
-        height: 100vh;
-        /*表示する高さ*/
-        overflow: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    /*ナビゲーション*/
-    #g-nav ul {
-        display: none;
-        /*ナビゲーション天地中央揃え*/
-        position: absolute;
-        z-index: 999;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    #g-nav.panelactive ul {
-        display: block;
-    }
-
-    /*リストのレイアウト設定*/
-
-    #g-nav li {
-        list-style: none;
-        text-align: center;
-    }
-
-    #g-nav li a {
-        color: #333;
-        text-decoration: none;
-        padding: 10px;
-        display: block;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        font-weight: bold;
-    }
+.menu_List dd {
+    text-align: right;
+    margin-right: 45px;
+    font-family: 'Roboto';
+    font-weight: BOLD;
+}
 
 
 
 
-    /*アクセス関連*/
-    #Lougue_billding {
-        width: 314px;
-        height: 314px;
-    }
 
-    #train {
-        margin-bottom: -34px;
-    }
+/*ハンバーガーメニュー*/
 
-    .timeandday>dt {
-        text-align: left;
-        margin-left: 21px;
-        font-weight: bold;
-    }
+.consts-body {
+    position: relative;
+    background: #eee;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+}
 
-    #unpaid {
-        margin-right: 160px;
-        margin-top: -23px;
-    }
+.hamburger {
+    width: 40px;
+    height: 32px;
+    position: fixed;
+    border: none;
+    bottom: 16px;
+    left: 9px;
 
-    #phone {
-        margin-top: -24px;
-        margin-right: 109px;
-    }
+    z-index: 100;
+}
 
-    #hotpepperbeauty {
-        width: 250px;
-        height: 80px;
-    }
+
+
+
+
+/*メニュー線設定*/
+.conts-body {
+    position: relative;
+    background: #eee;
+    margin: 0 auto;
+}
+
+.hamburger {
+    width: 30px;
+    height: 25px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 1000;
+}
+
+.hamburger_bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    background: #000;
+    border-radius: 100px;
+    transition: top 0.24s, transform 0.24s, opacity 0.24s;
+}
+
+.hamburger_bar:nth-child(1) {
+    top: 0;
+}
+
+.hamburger_bar:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger_bar:nth-child(3) {
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+.hamburger_bar.is_active:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.hamburger_bar.is_active:nth-child(2) {
+    transform: translate(50%, -50%);
+    opacity: 0;
+}
+
+.hamburger_bar.is_active:nth-child(3) {
+    top: 50%;
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    background: #a0a0a0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.24s;
+}
+
+.nav.is_active {
+    opacity: 1;
+}
+
+.nav_list {
+    position: absolute;
+    flex-direction: column;
+    gap: 32px;
+    background-color: #DCD0B9;
+}
+
+/* リセットCSS */
+button {
+    border-color: transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav {
+    /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    /*はじめは透過0*/
+    /*ナビの位置と形状*/
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    /*ナビの高さ*/
+    background: #DCD0B9;
+    /*動き*/
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+/*アクティブクラスがついたら透過なしにして最前面へ*/
+#g-nav.panelactive {
+    opacity: 1;
+    z-index: 999;
+    pointer-events: auto;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list {
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    /*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    display: none;
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#g-nav.panelactive ul {
+    display: block;
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li {
+    list-style: none;
+    text-align: center;
+}
+
+#g-nav li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+
+
+
+/*アクセス関連*/
+#Lougue_billding {
+    width: 314px;
+    height: 314px;
+}
+
+#train {
+    margin-bottom: -34px;
+}
+
+.timeandday>dt {
+    text-align: left;
+    margin-left: 21px;
+    font-weight: bold;
+}
+
+#unpaid {
+    margin-right: 160px;
+    margin-top: -23px;
+}
+
+#phone {
+    margin-top: -24px;
+    margin-right: 109px;
+}
+
+#hotpepperbeauty {
+    width: 250px;
+    height: 80px;
+}
 
 }
