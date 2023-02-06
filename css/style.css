@@ -34,7 +34,7 @@ a {
     position: fixed;
     right: 10px;
     bottom: 18px;
-    background: #DCD0B9;
+    background: #FFCD70;
     border-radius: 14px;
     padding: 13px;
     padding-block: revert;
@@ -42,10 +42,6 @@ a {
     color: #333
 }
 
-
-.workstyle {
-    background-color: ;
-}
 
 
 
@@ -71,7 +67,7 @@ a {
 
 .from_biginner {
     background: #E8E7E2;
-    padding: 40px;
+    padding: 50px;
 }
 
 #laststyle {
@@ -257,14 +253,15 @@ address {
 
     h1 {
         text-align: center;
-        font-size: 124px;
+        font-size: 80px;
         padding: 40px;
+        margin: 10px;
     }
 
     h2 {
         text-align: center;
-        font-size: 100px;
-        padding: 40px;
+        font-size: 60px;
+        padding: 60px;
     }
 
     dt {
@@ -294,6 +291,7 @@ address {
 
     .nav_list li {
         list-style: none;
+        font-size: 30px;
     }
 
     .nav_item {
@@ -306,6 +304,7 @@ address {
         padding: 8px 0;
         text-decoration: none;
         color: #333;
+        font-weight: bold;
     }
 
     .nav_item a:hover {
@@ -322,7 +321,7 @@ address {
         padding: auto;
         background: #DCC7AB;
         width: 100%;
-        height: 900px;
+        height: 700px;
     }
 
     #catchcopy {
@@ -333,14 +332,14 @@ address {
     }
 
     .bylougue>p {
-        font-size: 55px;
+        font-size: 30px;
         padding: 60px;
     }
 
     /*髪型設定*/
 
     #from_yung {
-        font-size: 50px;
+        font-size: 30px;
         margin-bottom: 15px;
     }
 
@@ -398,28 +397,43 @@ address {
     /*ベスト3*/
     #best1 {
         color: #B28169;
-        font-size: 30px;
+        font-size: 25px;
         font-family: "Sylfaen";
-        padding: 4px;
+        padding: 15px;
         margin-bottom: 5px;
     }
 
+    #innnercolorxmintgreen {
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 25px;
+    }
+
+
     #best2 {
         color: #82D0C8;
-        font-size: 30px;
+        font-size: 25px;
         font-family: "Sylfaen";
-        padding: 5px;
+        padding: 15px;
     }
 
     #Wcolorgreen {
-        margin-bottom: 51px;
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 30px;
     }
 
     #best3 {
         color: #DE74B7;
-        font-size: 30px;
+        font-size: 25px;
         font-family: "Sylfaen";
+        padding: 15px;
+    }
+
+    #balayagexpinkbeige {
+        font-size: 20px;
         padding: 10px;
+        margin-bottom: 35px;
     }
 
     .combination {
@@ -431,8 +445,14 @@ address {
     #other1 {
         color: #000000;
         font-family: 'Sylfaen';
-        font-size: 30px;
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    #mensmashxparma {
+        font-size: 20px;
         padding: 10px;
+        margin-bottom: 50px;
     }
 
     #other2 {
@@ -441,17 +461,36 @@ address {
         padding: 10px;
     }
 
+    #balayagexpinkgradeu {
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 63px;
+    }
+
     #other3 {
         color: #937B69;
         font-size: 30px;
         padding: 10px;
     }
 
+    #bi-silettmideum {
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 66px;
+    }
+
     #other4 {
         color: #201D1D;
-        font-size: 30px;
+        font-size: 25px;
         padding: 10px;
     }
+
+    #nopinhairset {
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 26px;
+    }
+
 
     #other5 {
         color: #937B69;
@@ -459,10 +498,22 @@ address {
         padding: 10px;
     }
 
+    #naturalbob {
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 58px;
+    }
+
     #other6 {
         color: #201D1D;
-        font-size: 30px;
+        font-size: 25px;
         padding: 10px;
+    }
+
+    #innnerparplegradus {
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 70px;
     }
 
     .best3_set {
@@ -477,6 +528,8 @@ address {
         display: flex;
         margin: 36px;
     }
+
+
 
     .styleresponsiv {
         display: flex;
@@ -550,9 +603,14 @@ address {
 
     /*新規様コンテンツ*/
 
+    .from_biginner {
+        background: #E8E7E2;
+        padding: 100px;
+    }
+
     .from_biginner p {
         text-align: center;
-        font-size: 75px;
+        font-size: 40px;
         color: #333;
         padding: 100px;
 
@@ -791,20 +849,28 @@ address {
         font-size: 35px;
     }
 
+    .SNS img {
+        width: 600px;
+        height: 480px;
+    }
+
     #hotpepperbeauty {
         width: 393px;
         height: 120px;
+        margin: 60px;
     }
 
     #return_button {
-        width: 430px;
-        height: 265px;
+        width: 300px;
+        height: 200px;
+        padding: 30px
     }
+
 }
 
 
 
-@media (min-width: 200px) and (max-width: 800px) {
+@media (min-width: 200px) and (max-width: 949px) {
 
     /*ファーストビュー*/
 
@@ -847,8 +913,13 @@ address {
     /*ローグとは*/
 
     .stylist img {
-        margin: 5px;
+        padding: 2px;
+        margin: 8px;
+        width: 180px;
+        height: 110px;
     }
+
+
 
     /*インテリア関連*/
 
@@ -882,6 +953,7 @@ address {
 
     .combination {
         font-size: 15px;
+        padding: 5px;
     }
 
     /*その他のスタイル*/
@@ -938,7 +1010,7 @@ address {
         width: 300px;
         height: 300px;
         margin: auto;
-        padding: 10px;
+        padding: 20px;
     }
 
 
@@ -947,13 +1019,41 @@ address {
         width: 300px;
         height: 300px;
         margin: auto;
-        padding: 10px;
+        padding: 20px;
 
     }
 
+    #mensmashxparma {
+        margin-bottom: 20px;
+    }
+
+    #balayagexpinkgradeu {
+        margin-bottom: 20px;
+    }
+
+    #bi-silettmideum {
+        margin-bottom: 20px;
+    }
+
+    #nopinhairset {
+        margin-bottom: 20px;
+    }
+
+    #naturalbob {
+        margin-bottom: 20px;
+    }
+
+    #innnerparplegradus {
+        margin-bottom: 20px;
+    }
+
+
+
     .Detailed {
         font-size: 15px;
-        padding: 7px
+        padding: 7px;
+        margin-top: -7px;
+
     }
 
     .Detailed_mini {
@@ -982,8 +1082,7 @@ address {
         height: 280px;
         margin: auto;
         text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .style_explanation>dd {

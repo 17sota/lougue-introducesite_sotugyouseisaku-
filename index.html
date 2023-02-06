@@ -10,6 +10,10 @@
     <script src="js/script.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"
         integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <link rel="icon" href="/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon-180x180.png">
+    <link rel="manifest" href="/manifest.webmanifest">
 
 </head>
 
@@ -52,12 +56,12 @@
         <h1>Logueとは</h1>
         <div class="workstyle">
             <div class="stylist">
-                <img src="img/washing_hair.png" alt="洗髪の様子">
-                <img src="img/dryer.png" alt="ドライヤーをしている様子">
+                <img src="img/whsing_hier.jpg" alt="洗髪の様子">
+                <img src="img/dryer.jpg" alt="ドライヤーをしている様子">
             </div>
             <div class="stylist">
-                <img src="img/hirono(cut1).png" alt="店長がカットしている様子">
-                <img src="img/womanstylist.png" alt="女性のスタイリスさんがカットしている様子">
+                <img src="img/hirono.jpg" alt="店長がカットしている様子">
+                <img src="img/womanstylist.jpg" alt="女性のスタイリスさんがカットしている様子">
             </div>
         </div>
         <div class="bylougue">
@@ -96,7 +100,7 @@
                     <div class="style_explanation">
                         <dl>
                             <dt id="best1">インナーカラーXミントグリーン</dt><!-- スタイル名 -->
-                            <dd>ナチュラルなイメージをベースにブラウンに緑のメッシュを入れたスタイルです。</dd>
+                            <dd id="innnercolorxmintgreen">ナチュラルなイメージをベースにブラウンに緑のメッシュを入れたスタイルです。</dd>
                         </dl>
                         <p class="combination">カット、カラー、トリートメント</p>
                         <div class="Detailed"><!-- スタイル説明 -->
@@ -148,7 +152,7 @@
                     <div class="style_explanation">
                         <dl>
                             <dt id="best3">バイヤージュxピンクベージュ</dt><!-- スタイル名 -->
-                            <dd>定番のバイヤージュにピンクベージュ系のカラーをしたスタイルです。</dd>
+                            <dd id="balayagexpinkbeige">定番のバイヤージュにピンクベージュ系のカラーをしたスタイルです。</dd>
                         </dl>
                         <p class="combination">ブリーチ+オンカラー</p>
                         <div class="Detailed"><!-- スタイル説明 -->
@@ -178,7 +182,7 @@
                         <div class="style_explanation">
                             <dl>
                                 <dt id="other1">men'sマッシュxパーマ</dt><!-- スタイル名 -->
-                                <dd>男性のお客様に人気のスタイルです。</dd>
+                                <dd id="mensmashxparma">男性のお客様に人気のスタイルです。</dd>
                             </dl>
                             <p class="combination">カットxパーマ</p>
                             <div class="Detailed"><!-- スタイル説明 -->
@@ -204,7 +208,7 @@
                         <div class="style_explanation">
                             <dl>
                                 <dt id="other2">バイレヤージュ+ピンクグレージュ</dt><!-- スタイル名 -->
-                                <dd>バイレヤージュが髪に動きを与えます</dd>
+                                <dd id="balayagexpinkgradeu">バイレヤージュが髪に動きを与えます</dd>
                             </dl>
                             <p class="combination">カット、カラー、トリートメント</p>
                             <div class="Detailed"><!-- スタイル説明 -->
@@ -231,7 +235,7 @@
                         <div class="style_explanation">
                             <dl>
                                 <dt id="other3">美シルエットミディアム</dt><!-- スタイル名 -->
-                                <dd>くびれ感ある綺麗なミディアムヘアです</dd>
+                                <dd id="bi-silettmideum">くびれ感ある綺麗なミディアムヘアです</dd>
                             </dl>
                             <p class="combination">カット+カラー</p>
                             <div class="Detailed"><!-- スタイル説明 -->
@@ -259,7 +263,7 @@
                         <div class="style_explanation">
                             <dl>
                                 <dt id="other4">ピンなしヘアセット☆</dt><!-- スタイル名 -->
-                                <dd>余興のためピンを使わないアップ。ピンが苦手な方にもオススメです</dd>
+                                <dd id="nopinhairset">余興のためピンを使わないアップ。ピンが苦手な方にもオススメです</dd>
                             </dl>
                             <p class="combination">アップ</p>
                             <div class="Detailed"><!-- スタイル説明 -->
@@ -288,7 +292,7 @@
                         <div class="style_explanation">
                             <dl>
                                 <dt id="other5">ナチュラルボブ</dt><!-- スタイル名 -->
-                                <dd>程よい外ハネとナチュラルなインナーカラー</dd>
+                                <dd id="naturalbob">程よい外ハネとナチュラルなインナーカラー</dd>
                             </dl>
                             <p class="combination">カット、インナーカラー、トリートメント</p>
                             <div class="Detailed"><!-- スタイル説明 -->
@@ -314,7 +318,7 @@
                         <div class="style_explanation">
                             <dl>
                                 <dt id="other6">インナーパープル+グレージュ</dt><!-- スタイル名 -->
-                                <dd>ウェット感のあるスタイリング剤で簡単セット</dd>
+                                <dd id="innnerparplegradus">ウェット感のあるスタイリング剤で簡単セット</dd>
                             </dl>
                             <p class="combination">カット、カラー、インナーカラー</p>
                             <div class="Detailed"><!-- スタイル説明 -->
@@ -489,7 +493,7 @@
                     <div class="menutittle">
                         トリートメント
                     </div>
-                    <dl class="menu_List">l
+                    <dl class="menu_List">
                         <dt>Link3ステップ</dt>
                         <dd>3300円</dd>
                         <dt>髪質改善ステップ+ホームケア</dt>
