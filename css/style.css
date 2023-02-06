@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-    background-color: #DFD1BF;
+    background-color: #c1b5a2;
     background-position: center;
     width: 100%;
 }
@@ -34,11 +34,12 @@ a {
     position: fixed;
     right: 10px;
     bottom: 18px;
-    background: #FFCD70;
+    background: #DCD0B9;
     border-radius: 14px;
     padding: 13px;
     padding-block: revert;
     height: 22px;
+    color: #333
 }
 
 
@@ -56,77 +57,8 @@ a {
 
 #from_yung {
     font-size: 14px;
-    margin-bottom: 15px;
-}
-
-/*ベスト3*/
-#best1 {
-    color: #B28169;
-    font-size: 13px;
-    font-family: "Sylfaen";
-    padding: 4px;
-    margin-bottom: 5px;
-}
-
-#best2 {
-    color: #82D0C8;
-    font-size: 13px;
-    font-family: "Sylfaen";
-    padding: 4px;
-}
-
-#best3 {
-    color: #DE74B7;
-    font-size: 13px;
-    font-family: "Sylfaen";
-    padding: 5px;
-}
-
-.combination {
-    font-size: 10px;
-    margin-bottom: 5px;
-}
-
-/*その他のスタイル*/
-#other1 {
-    color: #000000;
-    font-family: 'Sylfaen';
-    font-size: 16px;
-    padding: 5px;
-}
-
-#other2 {
-    color: #F16682;
-    font-size: 16px;
+    margin: 10px;
     padding: 10px;
-}
-
-#other3 {
-    color: #937B69;
-    font-size: 16px;
-    padding: 10px;
-    margin-bottom: 16px
-}
-
-#other4 {
-    color: #201D1D;
-    font-size: 16px;
-    padding: 10px;
-    margin-bottom: 16px
-}
-
-#other5 {
-    color: #937B69;
-    font-size: 16px;
-    padding: 10px;
-    margin-bottom: 16px
-}
-
-#other6 {
-    color: #201D1D;
-    font-size: 13px;
-    padding: 10px;
-    margin-bottom: 16px
 }
 
 /*新規様向けへ*/
@@ -190,13 +122,14 @@ a {
 
 img {
     width: 100%;
+    max-width: 100%;
 }
 
 .stylist {
     display: flex;
-    padding: 5px;
-    margin-bottom: 5px;
 }
+
+
 
 /*ローグとは*/
 
@@ -204,22 +137,15 @@ img {
     padding: auto;
     background: #DCC7AB;
     width: 100%;
+    padding: 25px;
 }
 
 #catchcopy {
     font-family: 'Segoe Print';
     font-weight: "Regular";
     font-size: 30px;
+    margin: 5px;
 }
-
-/*素材*/
-
-.sozai figcaption {
-    font-weight: bold;
-}
-
-/*サービス一覧*/
-
 
 
 /*メニュー*/
@@ -236,44 +162,7 @@ img {
     width: 310px;
 }
 
-/*髪型説明*/
 
-.other {
-    padding: 10px;
-}
-
-.style_explanation>dd {
-    font-size: 1px;
-    margin-bottom: 10px;
-}
-
-.Detailed {
-    font-size: 13px;
-    margin-bottom: 7px;
-}
-
-.Detailed>dt {
-    font-size: 13px;
-    text-align: center;
-    margin-bottom: -17px;
-    margin-left: -87px;
-}
-
-.Detailed>dd {
-    font-size: 10px;
-    margin-left: 77px;
-}
-
-.style_explanation {
-    border: none;
-    background-color: #FFFFFF;
-    width: 200px;
-    height: 180px;
-    margin: auto;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
 /*メニュー関連*/
 
@@ -296,6 +185,7 @@ address {
 
 .timeandday {
     margin: 38px;
+    line-height: 2;
 }
 
 .timeandday>dt {
@@ -307,7 +197,7 @@ address {
 .timeandday>dd {
     text-align: right;
     margin-right: -15px;
-    margin-top: -24px;
+    margin-top: -30px;
 }
 
 .SNS img {
@@ -320,6 +210,9 @@ address {
 /*PC版↓*/
 @media (min-width: 950px) and (max-width: 2000px) {
 
+    .hamburgermenu_icon {
+        margin-top: -25px;
+    }
 
     .reserve {
         position: fixed;
@@ -380,10 +273,12 @@ address {
 
     .left {
         text-align: left;
+        margin-left: 10px;
     }
 
     .right {
         text-align: right;
+        margin-right: 10px;
     }
 
     ul {
@@ -418,6 +313,11 @@ address {
     }
 
     /*ローグとは*/
+
+    .stylist img {
+        margin: 20px;
+    }
+
     .bylougue {
         padding: auto;
         background: #DCC7AB;
@@ -428,12 +328,13 @@ address {
     #catchcopy {
         font-family: "Segoe Print";
         font-size: 115px;
-        margin: 15px;
+        padding: 45px;
+        color: #5A5A5A;
     }
 
     .bylougue>p {
-        font-size: 53px;
-        padding: 59px;
+        font-size: 55px;
+        padding: 60px;
     }
 
     /*髪型設定*/
@@ -461,26 +362,27 @@ address {
     }
 
     .Detailed {
-        font-size: 13px;
-        margin-bottom: 7px;
+        font-size: 15px;
+        padding: 7px
     }
 
-    .Detailed>dt {
-        font-size: 30px;
+    .Detailed_mini {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        line-height: 3;
+    }
+
+    .Detailed_mini dt {
         text-align: center;
-        margin-right: 141px;
-        margin-top: 20px;
-        margin-bottom: -44px;
+        width: 198px;
     }
 
-    .Detailed>dd {
-        font-size: 27px;
-        margin-left: 165px;
-        line-height: 120%
-    }
-
-    #Wcolorgreen {
-        margin-bottom: 50px;
+    .Detailed_mini dd {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 2px;
+        width: 206px;
     }
 
     .style_explanation {
@@ -491,6 +393,7 @@ address {
         margin: auto;
         text-align: center;
     }
+
 
     /*ベスト3*/
     #best1 {
@@ -506,6 +409,10 @@ address {
         font-size: 30px;
         font-family: "Sylfaen";
         padding: 5px;
+    }
+
+    #Wcolorgreen {
+        margin-bottom: 51px;
     }
 
     #best3 {
@@ -525,54 +432,50 @@ address {
         color: #000000;
         font-family: 'Sylfaen';
         font-size: 30px;
-        padding: 5px;
+        padding: 10px;
     }
 
     #other2 {
         color: #F16682;
         font-size: 27px;
         padding: 10px;
-        margin-bottom: 30px;
     }
 
     #other3 {
         color: #937B69;
         font-size: 30px;
         padding: 10px;
-        margin-bottom: 22px
     }
 
     #other4 {
         color: #201D1D;
         font-size: 30px;
         padding: 10px;
-        margin-bottom: 16px
     }
 
     #other5 {
         color: #937B69;
         font-size: 30px;
         padding: 10px;
-        margin-bottom: 16px
     }
 
     #other6 {
         color: #201D1D;
         font-size: 30px;
         padding: 10px;
-        margin-bottom: 16px
     }
 
     .best3_set {
-        padding: 90px;
+        padding: 78px;
     }
 
     .other_set {
-        padding: 90px;
+        padding: 76px;
     }
 
     .best3_pc {
         display: flex;
+        margin: 36px;
     }
 
     .styleresponsiv {
@@ -596,10 +499,14 @@ address {
     /*素材コンテンツ > オススメ(PC用)*/
 
     /*素材コンテンツ*/
+    .sozai figcaption {
+        font-weight: bold;
+        font-size: 90px;
+    }
 
     figure img {
-        width: 1270px;
-        height: 1610px;
+        width: 942px;
+        height: 700px;
     }
 
     figcaption {
@@ -643,6 +550,14 @@ address {
 
     /*新規様コンテンツ*/
 
+    .from_biginner p {
+        text-align: center;
+        font-size: 75px;
+        color: #333;
+        padding: 100px;
+
+    }
+
     .service {
         padding: 40px;
         margin: auto;
@@ -650,13 +565,13 @@ address {
         width: 1480px;
         height: 575px;
         border-radius: 11px;
-        margin-bottom: 14px;
+        margin-bottom: 100px;
     }
 
     .service>dd {
         font-size: 45px;
         text-align: center;
-        padding: 30px;
+        padding: 60px;
     }
 
     .service>dt {
@@ -880,9 +795,16 @@ address {
         width: 393px;
         height: 120px;
     }
+
+    #return_button {
+        width: 430px;
+        height: 265px;
+    }
 }
 
-@media (min-width: 200px) and (max-width: 500px) {
+
+
+@media (min-width: 200px) and (max-width: 800px) {
 
     /*ファーストビュー*/
 
@@ -905,12 +827,105 @@ address {
         font-size: 25px;
         text-align: center;
         padding: 10px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
     }
 
     .u-invisible-md-down {
         position: absolute !important;
         clip: rect(1px, 1px, 1px, 1px) !important;
         visibility: hidden !important;
+    }
+
+
+    /*ローグとは*/
+
+    .stylist img {
+        margin: 5px;
+    }
+
+    /*インテリア関連*/
+
+    #interior_mean {
+        font-size: 15px;
+        margin: 15px;
+    }
+
+    /*ベスト3*/
+    #best1 {
+        color: #B28169;
+        font-size: 18px;
+        font-family: "Sylfaen";
+        padding: 10px;
+
+    }
+
+    #best2 {
+        color: #82D0C8;
+        font-size: 18px;
+        font-family: "Sylfaen";
+        padding: 10px;
+    }
+
+    #best3 {
+        color: #DE74B7;
+        font-size: 18px;
+        font-family: "Sylfaen";
+        padding: 10px;
+    }
+
+    .combination {
+        font-size: 15px;
+    }
+
+    /*その他のスタイル*/
+    #other1 {
+        color: #000000;
+        font-family: 'Sylfaen';
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #other2 {
+        color: #F16682;
+        font-size: 17px;
+        padding: 10px;
+    }
+
+    #other3 {
+        color: #937B69;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #other4 {
+        color: #201D1D;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #other5 {
+        color: #937B69;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #other6 {
+        color: #201D1D;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /*髪型説明*/
+
+    .other {
+        padding: 10px;
     }
 
     /*髪型一覧*/
@@ -920,36 +935,60 @@ address {
     }
 
     .best-three {
-        width: 167px;
-        height: 173px;
+        width: 300px;
+        height: 300px;
         margin: auto;
-        padding: 5px;
+        padding: 10px;
     }
 
 
 
     .others {
-        width: 167px;
-        height: 173px;
+        width: 300px;
+        height: 300px;
         margin: auto;
-        padding: 5px;
+        padding: 10px;
 
+    }
+
+    .Detailed {
+        font-size: 15px;
+        padding: 7px
+    }
+
+    .Detailed_mini {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 30px;
+        line-height: 3;
+    }
+
+    .Detailed_mini dt {
+        text-align: center;
+        width: 94px;
+    }
+
+    .Detailed_mini dd {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 2px;
+        width: 147px
+    }
+
+    .style_explanation {
+        border: none;
+        background-color: #FFFFFF;
+        width: 300px;
+        height: 280px;
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .style_explanation>dd {
-        font-size: 10px;
-        margin-bottom: 5px;
-    }
-
-
-
-
-
-    /*インテリア関連*/
-
-    #interior_mean {
         font-size: 15px;
-        margin: 15px;
+        margin: 5px
     }
 
     /*新規コンテンツ関連*/
@@ -959,7 +998,7 @@ address {
         background: #FFF;
         height: 162px;
         border-radius: 11px;
-        margin-bottom: 14px;
+        margin-bottom: 30px;
     }
 
 
@@ -969,7 +1008,7 @@ address {
         font-size: 20px;
         text-align: center;
         font-weight: bold;
-        margin-bottom: 14px
+        margin-bottom: 20px
     }
 
     .service>dd {
@@ -1002,6 +1041,7 @@ address {
         width: 350px;
         height: 200px;
         margin: 20px;
+        margin-bottom: 40px;
     }
 
     .customer_voice_man {
@@ -1010,7 +1050,7 @@ address {
         width: 350px;
         height: 200px;
         margin: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .customer_voice_woman p {
@@ -1031,6 +1071,7 @@ address {
     .customer_voice_woman dl {
         display: flex;
         margin-left: 225px;
+        margin-top: -10px;
     }
 
     .customer_voice_man p {
@@ -1040,315 +1081,333 @@ address {
         line-height: 1.8;
         text-align: left;
     }
-}
-
-.customer_voice_man img {
-    margin-left: 222px;
-    margin-bottom: -109px;
-    width: 94px;
-    height: 94px;
-}
-
-.customer_voice_man dl {
-    display: flex;
-    margin-left: 225px;
-}
-
-.enquete {
-    position: relative;
-    border: none;
-    appearance: none;
-    outline: 0;
-    border-radius: 8px;
-    background: #DEB887;
-    color: #000000;
-    font-weight: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    height: 64px;
-    margin: auto;
-}
-
-/*素材コンテンツ*/
-.sozai {
-    width: 270px;
-    margin: auto;
-}
-
-main {
-    font-size: 20px;
-}
-
-.sozai dl {
-    margin: 18px;
-}
-
-.sozai dt {
-    font-family: 'Roboto';
-    font-weight: bold;
-    margin: auto;
-
-}
-
-.sozai dd {
-    font-size: 15px;
-}
 
 
-/*メニュー関連*/
+    .customer_voice_man img {
+        margin-left: 222px;
+        margin-bottom: -109px;
+        width: 94px;
+        height: 94px;
+    }
 
-.menu_List {
-    margin-bottom: 15px;
-}
+    .customer_voice_man dl {
+        display: flex;
+        margin-left: 225px;
+        margin-top: -10px;
+    }
 
-.menu_List dt {
-    width: calc();
-    text-align: left;
-    margin-left: 40px;
-}
+    .enquete {
+        position: relative;
+        border: none;
+        appearance: none;
+        outline: 0;
+        border-radius: 8px;
+        background: #DEB887;
+        color: #000000;
+        font-weight: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        height: 64px;
+        margin: auto;
+    }
 
-.menu_List dd {
-    text-align: right;
-    margin-right: 45px;
-    font-family: 'Roboto';
-    font-weight: BOLD;
-}
+    /*素材コンテンツ*/
+    .sozai {
+        width: 270px;
+        margin: auto;
+    }
+
+    .sozai figcaption {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    main {
+        font-size: 20px;
+    }
+
+    .sozai dl {
+        margin: 18px;
+    }
+
+    .sozai dt {
+        font-family: 'Roboto';
+        font-weight: bold;
+        margin: auto;
+
+    }
+
+    .sozai dd {
+        font-size: 15px;
+    }
 
 
+    /*メニュー関連*/
 
+    .menu_List {
+        margin-bottom: 15px;
+    }
 
+    .menu_List dt {
+        width: calc();
+        text-align: left;
+        margin-left: 40px;
+    }
 
-/*ハンバーガーメニュー*/
-
-.consts-body {
-    position: relative;
-    background: #eee;
-    width: 400px;
-    height: 600px;
-    margin: 0 auto;
-}
-
-.hamburger {
-    width: 40px;
-    height: 32px;
-    position: fixed;
-    border: none;
-    bottom: 16px;
-    left: 9px;
-
-    z-index: 100;
-}
+    .menu_List dd {
+        text-align: right;
+        margin-right: 45px;
+        font-family: 'Roboto';
+        font-weight: BOLD;
+    }
 
 
 
 
 
-/*メニュー線設定*/
-.conts-body {
-    position: relative;
-    background: #eee;
-    margin: 0 auto;
-}
+    /*ハンバーガーメニュー*/
 
-.hamburger {
-    width: 30px;
-    height: 25px;
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
-    z-index: 1000;
-}
+    .consts-body {
+        position: relative;
+        background: #eee;
+        width: 400px;
+        height: 600px;
+        margin: 0 auto;
+    }
 
-.hamburger_bar {
-    display: block;
-    width: 100%;
-    height: 3px;
-    position: absolute;
-    left: 0;
-    background: #000;
-    border-radius: 100px;
-    transition: top 0.24s, transform 0.24s, opacity 0.24s;
-}
+    .hamburger {
+        width: 40px;
+        height: 32px;
+        position: fixed;
+        border: none;
+        bottom: 16px;
+        left: 9px;
 
-.hamburger_bar:nth-child(1) {
-    top: 0;
-}
-
-.hamburger_bar:nth-child(2) {
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.hamburger_bar:nth-child(3) {
-    top: 100%;
-    transform: translateY(-100%);
-}
-
-.hamburger_bar.is_active:nth-child(1) {
-    top: 50%;
-    transform: translateY(-50%) rotate(135deg);
-}
-
-.hamburger_bar.is_active:nth-child(2) {
-    transform: translate(50%, -50%);
-    opacity: 0;
-}
-
-.hamburger_bar.is_active:nth-child(3) {
-    top: 50%;
-    transform: translateY(-50%) rotate(-135deg);
-}
-
-.nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 99;
-    background: #a0a0a0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.24s;
-}
-
-.nav.is_active {
-    opacity: 1;
-}
-
-.nav_list {
-    position: absolute;
-    flex-direction: column;
-    gap: 32px;
-    background-color: #DCD0B9;
-}
-
-/* リセットCSS */
-button {
-    border-color: transparent;
-    background: transparent;
-    cursor: pointer;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/*========= ナビゲーションのためのCSS ===============*/
-
-#g-nav {
-    /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
-    position: fixed;
-    z-index: -1;
-    opacity: 0;
-    /*はじめは透過0*/
-    /*ナビの位置と形状*/
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    /*ナビの高さ*/
-    background: #DCD0B9;
-    /*動き*/
-    transition: all 0.3s;
-    pointer-events: none;
-}
-
-/*アクティブクラスがついたら透過なしにして最前面へ*/
-#g-nav.panelactive {
-    opacity: 1;
-    z-index: 999;
-    pointer-events: auto;
-}
-
-/*ナビゲーションの縦スクロール*/
-#g-nav.panelactive #g-nav-list {
-    /*ナビの数が増えた場合縦スクロール*/
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    height: 100vh;
-    /*表示する高さ*/
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
-/*ナビゲーション*/
-#g-nav ul {
-    display: none;
-    /*ナビゲーション天地中央揃え*/
-    position: absolute;
-    z-index: 999;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#g-nav.panelactive ul {
-    display: block;
-}
-
-/*リストのレイアウト設定*/
-
-#g-nav li {
-    list-style: none;
-    text-align: center;
-}
-
-#g-nav li a {
-    color: #333;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: bold;
-}
+        z-index: 100;
+    }
 
 
 
 
-/*アクセス関連*/
-#Lougue_billding {
-    width: 314px;
-    height: 314px;
-}
 
-#train {
-    margin-bottom: -34px;
-}
+    /*メニュー線設定*/
+    .conts-body {
+        position: fixed;
+        background: #DCD0B9;
+        height: 40px;
+        bottom: 9px;
+        width: 44px;
+        left: 6px;
+        border-radius: 50%;
+        z-index: 1000;
+    }
 
-.timeandday>dt {
-    text-align: left;
-    margin-left: 21px;
-    font-weight: bold;
-}
+    .hamburger {
+        width: 30px;
+        height: 25px;
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+        z-index: 1000;
+    }
 
-#unpaid {
-    margin-right: 160px;
-    margin-top: -23px;
-}
+    .hamburger_bar {
+        display: block;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        left: 4px;
+        background: #000;
+        border-radius: 100px;
+        transition: top 0.24s, transform 0.24s, opacity 0.24s;
+    }
 
-#phone {
-    margin-top: -24px;
-    margin-right: 109px;
-}
+    .hamburger_bar:nth-child(1) {
+        top: 0;
+    }
 
-#hotpepperbeauty {
-    width: 250px;
-    height: 80px;
-}
+    .hamburger_bar:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .hamburger_bar:nth-child(3) {
+        top: 100%;
+        transform: translateY(-100%);
+    }
+
+    .hamburger_bar.is_active:nth-child(1) {
+        top: 50%;
+        transform: translateY(-50%) rotate(135deg);
+    }
+
+    .hamburger_bar.is_active:nth-child(2) {
+        transform: translate(50%, -50%);
+        opacity: 0;
+    }
+
+    .hamburger_bar.is_active:nth-child(3) {
+        top: 50%;
+        transform: translateY(-50%) rotate(-135deg);
+    }
+
+    .nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 99;
+        background: #a0a0a0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.24s;
+    }
+
+    .nav.is_active {
+        opacity: 1;
+    }
+
+    .nav_list {
+        position: absolute;
+        flex-direction: column;
+        gap: 32px;
+        background-color: #DCD0B9;
+    }
+
+    /* リセットCSS */
+    button {
+        border-color: transparent;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /*========= ナビゲーションのためのCSS ===============*/
+
+    #g-nav {
+        /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+        position: fixed;
+        z-index: -1;
+        opacity: 0;
+        /*はじめは透過0*/
+        /*ナビの位置と形状*/
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        /*ナビの高さ*/
+        background: #DCD0B9;
+        /*動き*/
+        transition: all 0.3s;
+        pointer-events: none;
+    }
+
+    /*アクティブクラスがついたら透過なしにして最前面へ*/
+    #g-nav.panelactive {
+        opacity: 1;
+        z-index: 999;
+        pointer-events: auto;
+    }
+
+    /*ナビゲーションの縦スクロール*/
+    #g-nav.panelactive #g-nav-list {
+        /*ナビの数が増えた場合縦スクロール*/
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: 100vh;
+        /*表示する高さ*/
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /*ナビゲーション*/
+    #g-nav ul {
+        display: none;
+        /*ナビゲーション天地中央揃え*/
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #g-nav.panelactive ul {
+        display: block;
+    }
+
+    /*リストのレイアウト設定*/
+
+    #g-nav li {
+        list-style: none;
+        text-align: center;
+    }
+
+    #g-nav li a {
+        color: #333;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+        line-height: 2.5;
+    }
+
+
+
+
+    /*アクセス関連*/
+    #Lougue_billding {
+        width: 314px;
+        height: 314px;
+    }
+
+    #train {
+        margin-bottom: -34px;
+    }
+
+    .timeandday>dt {
+        text-align: left;
+        margin-left: 21px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    #unpaid {
+        margin-right: 160px;
+        margin-top: -29px;
+    }
+
+    #phone {
+        margin-top: -31px;
+        margin-right: 109px;
+    }
+
+    #hotpepperbeauty {
+        width: 250px;
+        height: 80px;
+    }
+
+    #return_button {
+        width: 120px;
+        height: 70px;
+    }
 
 }
